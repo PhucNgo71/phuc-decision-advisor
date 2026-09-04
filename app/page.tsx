@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <main className="page">
       <header className="topbar">
-        <div className="brand"><img src="/phuc-sealion.png" alt="Phuc mascot"/><div><b>Phuc</b><span>Decision Advisor</span></div></div>
+        <div className="brand"><img src="/phuc-sealion.png" alt="P mascot"/><div><b>P</b><span>Decision Advisor</span></div></div>
         <nav><a className="active">Home</a><a>Opportunities</a><a>Products</a><a>Customers</a><a>Insights</a><a>Settings</a></nav>
-        <div className="profile">Phuc Ngo <span>⌄</span></div>
+        <div className="profile">P <span>⌄</span></div>
       </header>
 
       <section className="hero">
@@ -28,12 +28,12 @@ export default function Home() {
           <h1>Think Wider.<br/>Decide Smarter.<br/><em>Go Further.</em></h1>
           <p>Your AI partner for opportunities, products, people and possibilities — built from your experience, designed for what’s next.</p>
           <div className="actions"><a href="#decision-lab">New Opportunity →</a><a className="secondary" href="#decision-lab">Open Decision Map</a></div>
-          <div className="principle">AI advises.<br/>Phuc decides.</div>
+          <div className="principle">AI advises.<br/>P decides.</div>
         </div>
 
         <div className="brain-stage">
           <div className="orbit orbit-a"/><div className="orbit orbit-b"/><div className="orbit orbit-c"/>
-          <div className="core"><span>◉</span><b>Phuc<br/>AI Brain</b></div>
+          <div className="core"><span>◉</span><b>P<br/>AI Brain</b></div>
           {brains.map((brain) => <div className={`brain-node ${brain.cls}`} key={brain.name}><i/><div><b>{brain.name}</b><span>{brain.desc}</span></div></div>)}
           {Array.from({length: 26}).map((_,i)=><span className={`dot d${i+1}`} key={i}/>) }
           <img className="mascot" src="/phuc-sealion.png" alt="Cute sea lion mascot"/>
