@@ -15,6 +15,8 @@ Open http://localhost:3000.
 
 Read `AGENTS.md`, then `docs/PRODUCT.md` and `docs/DECISION_MODEL.md`.
 
+Daily ChatGPT learning imports are tracked in `data/learning-imports.json`; review `docs/LEARNING_IMPORTS.md` before adding or promoting knowledge.
+
 Recommended first implementation tasks:
 1. Convert the static opportunity screen into editable project inputs.
 2. Add Win Objective selection with per-scope priority.
@@ -22,3 +24,4 @@ Recommended first implementation tasks:
 4. Add commercial validation using `data/commercial-rules.json`.
 5. Define persisted Opportunity, Decision, Product Experience, and Learning schemas.
 6. Add an Advisor API that returns the structured `AdvisorOutput` contract.
+
