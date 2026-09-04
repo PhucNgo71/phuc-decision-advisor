@@ -22,4 +22,3 @@ Recommended first implementation tasks:
 4. Add commercial validation using `data/commercial-rules.json`.
 5. Define persisted Opportunity, Decision, Product Experience, and Learning schemas.
 6. Add an Advisor API that returns the structured `AdvisorOutput` contract.
-
