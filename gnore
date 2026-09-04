@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js build output
+.next/
+out/
+
+# Local environment files
+.env*
+!.env.example
+
+# Vercel project metadata
+.vercel/
+
+# Logs and local tooling
+*.log
+.DS_Store
+Thumbs.db
+*.tsbuildinfo

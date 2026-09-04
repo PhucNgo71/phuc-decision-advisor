@@ -1,0 +1,13 @@
+{
+  "version": "2026-09-04",
+  "knowledge_type": "current_preference",
+  "rules": [
+    {"scope":"Furniture","brand":"Zenith","priority_for":["US-origin clients","Australian-origin clients","Asian-origin clients"]},
+    {"scope":"Furniture","brand":"HolmrisB8","priority_for":["European-origin clients"]},
+    {"scope":"Ergonomics","brand":"Humanscale","priority_for":["Ergonomic-led projects","US-origin clients"]},
+    {"scope":"Phonebooth","brand":"Framery / Wintech / Musepod-Hecor","priority_for":["Context dependent"]},
+    {"scope":"Carpet","brand":"Milliken","priority_for":["Package strategy"]},
+    {"scope":"Glass Partition","brand":"Spiralis","priority_for":["Primary glass partition solution"]},
+    {"scope":"Budget / Value Engineering","brand":"the first workshop","priority_for":["Budget line","Value engineering","Balancing project budget"]}
+  ]
+}

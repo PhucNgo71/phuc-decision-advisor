@@ -1,0 +1,18 @@
+{
+  "hard_rules": [
+    {"name":"Minimum gross margin per deal","value":0.12,"basis":"selling_price"}
+  ],
+  "current_targets": [
+    {"category":"Finished products","target_gm":0.30},
+    {"category":"Carpet / glass / rubber flooring","target_gm":0.23},
+    {"level":"Project","label":"standard","gm":0.25},
+    {"level":"Project","label":"good","gm":0.20}
+  ],
+  "payment_preferences": [
+    {"label":"Healthy","term":"70/30"},
+    {"label":"Fair","term":"50/50"},
+    {"customer_type":"Famous/reputable","term":"30/45/60-day invoice possible"},
+    {"customer_type":"Contractor","term":"40/30/30"}
+  ],
+  "bond_note":"Bonds are rare; evaluate bank fee, blocked capital/credit line, and duration."
+}
