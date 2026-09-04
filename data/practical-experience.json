@@ -1,0 +1,16 @@
+{
+  "version": "2026-09-04",
+  "lastReviewed": "2026-09-04",
+  "records": [
+    {
+      "id": "bond-capital-exposure",
+      "title": "Price the full cost of a project bond",
+      "classification": "experience",
+      "situation": "A workplace project requires a bank bond.",
+      "learning": "Bonds are uncommon, but their real commercial cost can extend beyond the bank fee.",
+      "decisionUse": "Before accepting, evaluate the bank fee, blocked capital or credit line, and the full bond duration.",
+      "source": "data/commercial-rules.json"
+    }
+  ]
+}
+
