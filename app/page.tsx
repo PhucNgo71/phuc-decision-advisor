@@ -1,3 +1,5 @@
+import { reviewedLearningCount } from '../lib/learnings';
+
 const brains = [
   { name: 'Product Brain', desc: 'Brands, models, applications, specs', cls: 'b1' },
   { name: 'Customer Brain', desc: 'Industries, regions, buying behavior', cls: 'b2' },
@@ -41,10 +43,11 @@ export default function Home() {
         <article><strong>◎</strong><div><b>Evaluate Opportunities</b><span>Multi-dimensional analysis with strategic scenarios.</span></div><i>→</i></article>
         <article><strong>◇</strong><div><b>Explore Products</b><span>Deep product knowledge across your portfolio.</span></div><i>→</i></article>
         <article><strong>◉</strong><div><b>Understand Customers</b><span>Smarter insights from real project experience.</span></div><i>→</i></article>
-        <article><strong>↗</strong><div><b>Learn & Improve</b><span>Turn decisions into long-term advantage.</span></div><i>→</i></article>
+        <article><strong>↗</strong><div><b>Learn & Improve</b><span>{reviewedLearningCount} reviewed learnings imported with source and classification.</span></div><i>→</i></article>
       </section>
 
       <footer><blockquote>“The important thing is not to stop questioning.”<small>— Albert Einstein</small></blockquote><div className="outcomes"><span>Stronger<br/>Decisions</span><span>Higher<br/>Win Rate</span><span>Healthier<br/>Business</span><span>A More<br/>Focused You</span></div></footer>
     </main>
   );
 }
+
