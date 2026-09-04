@@ -6,7 +6,7 @@ export const learningImports = imports as LearningImport[];
 export const reviewedLearningCount = learningImports
   .filter((learningImport) => learningImport.reviewStatus === 'reviewed')
   .flatMap((learningImport) => learningImport.records)
-  .filter((record) => record.adviceImpact !== 'none').length;
+  .filter((record) => record.knowledgeType !== 'temporary_context').length;
 
 export const latestLearningImport = learningImports.at(-1);
 
