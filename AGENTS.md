@@ -1,4 +1,4 @@
-# Codex Instructions — Phuc Decision Advisor
+# Codex Instructions — P Decision Advisor
 
 ## Product intent
 Build a web-based multi-dimensional strategic Decision Advisor for workplace/project sales and procurement strategy.
@@ -42,3 +42,4 @@ Next.js + TypeScript frontend; PostgreSQL + pgvector for structured and semantic
 
 ## Architecture principle
 LLM is replaceable. Decision history, structured rules, portfolio knowledge, product experience and user corrections are the durable intelligence layer.
+
