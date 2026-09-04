@@ -1,4 +1,5 @@
 import { reviewedLearningCount } from '../lib/learnings';
+import DecisionLab from './decision-lab';
 
 const brains = [
   { name: 'Product Brain', desc: 'Brands, models, applications, specs', cls: 'b1' },
@@ -26,7 +27,7 @@ export default function Home() {
           <div className="eyebrow">AI INSIGHTS. REAL EXPERIENCE. YOUR DECISION.</div>
           <h1>Think Wider.<br/>Decide Smarter.<br/><em>Go Further.</em></h1>
           <p>Your AI partner for opportunities, products, people and possibilities — built from your experience, designed for what’s next.</p>
-          <div className="actions"><button>New Opportunity →</button><button className="secondary">Chat with Phuc</button></div>
+          <div className="actions"><a href="#decision-lab">New Opportunity →</a><a className="secondary" href="#decision-lab">Open Decision Map</a></div>
           <div className="principle">AI advises.<br/>Phuc decides.</div>
         </div>
 
@@ -45,6 +46,8 @@ export default function Home() {
         <article><strong>◉</strong><div><b>Understand Customers</b><span>Smarter insights from real project experience.</span></div><i>→</i></article>
         <article><strong>↗</strong><div><b>Learn & Improve</b><span>{reviewedLearningCount} reviewed learnings imported with source and classification.</span></div><i>→</i></article>
       </section>
+
+      <DecisionLab />
 
       <footer><blockquote>“The important thing is not to stop questioning.”<small>— Albert Einstein</small></blockquote><div className="outcomes"><span>Stronger<br/>Decisions</span><span>Higher<br/>Win Rate</span><span>Healthier<br/>Business</span><span>A More<br/>Focused You</span></div></footer>
     </main>
