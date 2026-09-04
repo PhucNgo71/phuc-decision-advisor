@@ -85,7 +85,7 @@ export default function DecisionLab() {
           <div className="scenario-list">{result.scenarios.map((scenario) => <article key={scenario.name}><small>{scenario.name}</small><b>{scenario.value}</b><p>{scenario.tradeoff}</p></article>)}</div>
           <div className="recommendation"><small>Recommended direction</small><p>{result.direction}</p></div>
           <div className="advice-meta"><div><small>Key risk</small><b>{result.belowFloor ? 'Margin rule breach' : 'Unvalidated customer response'}</b></div><div><small>Unknown</small><b>Budget, power map, competition</b></div><div><small>Confidence</small><b>{result.confidence}%</b></div></div>
-          <div className="human-gate">AI advises. <strong>Phuc decides.</strong></div>
+          <div className="human-gate">AI advises. <strong>P decides.</strong></div>
         </div>
       </div>
     </section>
