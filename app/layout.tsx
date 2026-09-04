@@ -2,7 +2,7 @@ import './globals.css';
 import './decision-lab.css';
 
 export const metadata = {
-  title: 'Phuc Decision Advisor',
+  title: 'P Decision Advisor',
   description: 'Multi-dimensional strategic decision advisor for workplace projects.'
 };
 
