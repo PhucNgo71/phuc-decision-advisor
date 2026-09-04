@@ -1,5 +1,6 @@
 import './globals.css';
 import './decision-lab.css';
+import './knowledge-pulse.css';
 
 export const metadata = {
   title: 'P Decision Advisor',
