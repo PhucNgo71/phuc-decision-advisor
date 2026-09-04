@@ -11,7 +11,7 @@
         "id": "brand-friendly-seal-mascot",
         "knowledgeType": "current_preference",
         "domain": "brand",
-        "statement": "Use a friendly, optimistic seal mascot associated with the letter P as the primary character for Phuc Decision Advisor.",
+        "statement": "Use a friendly, optimistic seal mascot associated with the letter P as the primary character for P Decision Advisor.",
         "adviceImpact": "contextual",
         "evidence": ["/public/phuc-sealion.png"],
         "notes": "Visual preference only; it must not influence business recommendations."
@@ -36,7 +36,7 @@
         "id": "product-human-owned-decision",
         "knowledgeType": "hard_rule",
         "domain": "product",
-        "statement": "The AI advises and Phuc makes the final decision.",
+        "statement": "The AI advises and P makes the final decision.",
         "adviceImpact": "direct",
         "evidence": ["/docs/reference/homepage-concept.png"],
         "notes": "Consistent with the existing product reasoning contract."
