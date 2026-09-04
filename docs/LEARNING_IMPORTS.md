@@ -10,7 +10,7 @@ Imported knowledge is stored in `data/learning-imports.json`. Each source is rev
 4. Keep conflicting ideas as separate records; do not silently choose one.
 5. Do not treat software setup, access errors or deployment history as business knowledge.
 6. Deduplicate a new record against existing learning before adding it.
-7. A preference becomes a Hard Rule only when Phuc explicitly says so.
+7. A preference becomes a Hard Rule only when the user explicitly confirms it.
 
 ## Current import
 
