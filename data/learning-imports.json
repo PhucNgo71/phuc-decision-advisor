@@ -1,0 +1,64 @@
+[
+  {
+    "id": "chatgpt-share-6a9aee66-2026-09-04",
+    "sourceUrl": "https://chatgpt.com/share/6a9aee66-1f74-83ec-98a6-27e763e89263",
+    "sourceTitle": "Decision Advisor Training",
+    "importedAt": "2026-09-04",
+    "reviewStatus": "reviewed",
+    "summary": "The shared conversation contains brand exploration and project setup history. It does not contain customer, opportunity, commercial, product-performance, or outcome training.",
+    "records": [
+      {
+        "id": "brand-friendly-seal-mascot",
+        "knowledgeType": "current_preference",
+        "domain": "brand",
+        "statement": "Use a friendly, optimistic seal mascot associated with the letter P as the primary character for Phuc Decision Advisor.",
+        "adviceImpact": "contextual",
+        "evidence": ["/public/phuc-sealion.png"],
+        "notes": "Visual preference only; it must not influence business recommendations."
+      },
+      {
+        "id": "brand-gold-p-monogram-exploration",
+        "knowledgeType": "current_preference",
+        "domain": "brand",
+        "statement": "A luxury gold P monogram was explored as an alternative brand-mark direction.",
+        "adviceImpact": "none",
+        "notes": "Reference concept, not a confirmed replacement for the seal mascot."
+      },
+      {
+        "id": "brand-homepage-promise",
+        "knowledgeType": "current_preference",
+        "domain": "product",
+        "statement": "The preferred homepage promise is: Think Wider. Decide Smarter. Go Further.",
+        "adviceImpact": "contextual",
+        "evidence": ["/docs/reference/homepage-concept.png"]
+      },
+      {
+        "id": "product-human-owned-decision",
+        "knowledgeType": "hard_rule",
+        "domain": "product",
+        "statement": "The AI advises and Phuc makes the final decision.",
+        "adviceImpact": "direct",
+        "evidence": ["/docs/reference/homepage-concept.png"],
+        "notes": "Consistent with the existing product reasoning contract."
+      },
+      {
+        "id": "product-multi-brain-model",
+        "knowledgeType": "current_preference",
+        "domain": "product",
+        "statement": "Present the advisor as a connected set of Product, Customer, Commercial, Relationship, Competition, Execution, Sustainability, Project, and Learning brains.",
+        "adviceImpact": "contextual",
+        "evidence": ["/docs/reference/homepage-concept.png"],
+        "notes": "A navigation and communication model; reasoning still follows the formal Decision Model."
+      },
+      {
+        "id": "operations-repository-and-hosting",
+        "knowledgeType": "temporary_context",
+        "domain": "operations",
+        "statement": "The project repository is PhucNgo71/phuc-decision-advisor and the current production site is hosted on Vercel.",
+        "adviceImpact": "none",
+        "notes": "Operational context only. Connection errors and setup instructions from the conversation were intentionally not promoted into advisor knowledge."
+      }
+    ]
+  }
+]
+
