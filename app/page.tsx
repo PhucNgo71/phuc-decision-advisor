@@ -19,7 +19,7 @@ export default function Home() {
     <main className="page" id="top">
       <header className="topbar">
         <div className="brand"><img src="/phuc-sealion.png" alt="P mascot"/><div><b>P</b><span>Decision Advisor</span></div></div>
-        <nav><a className="active" href="#top">Home</a><a href="#decision-lab">Opportunities</a><a href="#decision-lab">Products</a><a href="#decision-lab">Customers</a><a href="#knowledge">Insights</a><a href="#knowledge">Updates</a></nav>
+        <nav><a className="active" href="#top">Home</a><a href="#decision-lab">Opportunities</a><a href="#decision-lab">Products</a><a href="#decision-lab">Customers</a><a href="#knowledge">Insights</a><a href="/procurement">Procurement</a></nav>
         <div className="profile">P <span>⌄</span></div>
       </header>
 
