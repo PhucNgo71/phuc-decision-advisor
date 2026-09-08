@@ -1,8 +1,8 @@
 import brandMap from '../data/ergovn-brand-map.json';
 import commercialRules from '../data/commercial-rules.json';
 import learningImports from '../data/learning-imports.json';
+import { reviewedLearningCount } from '../lib/learnings';
 
-const learningCount = learningImports.reduce((total, entry) => total + entry.records.length, 0);
 const reviewedSources = learningImports.filter((entry) => entry.reviewStatus === 'reviewed').length;
 const minimumMargin = Math.round(commercialRules.hard_rules[0].value * 100);
 
@@ -19,7 +19,7 @@ export default function KnowledgeMap() {
           </p>
         </div>
         <div className="km-live" aria-label="Knowledge map status">
-          <strong>{learningCount}</strong>
+          <strong>{reviewedLearningCount}</strong>
           <span>durable learnings</span>
           <small>{reviewedSources} reviewed sources · reviewed {brandMap.reviewedAt}</small>
         </div>
