@@ -1,5 +1,6 @@
 import { reviewedLearningCount } from '../lib/learnings';
 import DecisionLab from './decision-lab';
+import KnowledgeMap from './knowledge-map';
 import KnowledgePulse from './knowledge-pulse';
 
 const brains = [
@@ -19,7 +20,7 @@ export default function Home() {
     <main className="page" id="top">
       <header className="topbar">
         <div className="brand"><img src="/phuc-sealion.png" alt="P mascot"/><div><b>P</b><span>Decision Advisor</span></div></div>
-        <nav><a className="active" href="#top">Home</a><a href="#decision-lab">Opportunities</a><a href="#decision-lab">Products</a><a href="#decision-lab">Customers</a><a href="#knowledge">Insights</a><a href="#knowledge">Updates</a></nav>
+        <nav><a className="active" href="#top">Home</a><a href="#decision-lab">Opportunities</a><a href="#decision-lab">Products</a><a href="#decision-lab">Customers</a><a href="#knowledge-map">Map</a><a href="#knowledge">Updates</a></nav>
         <div className="profile">P <span>⌄</span></div>
       </header>
 
@@ -28,7 +29,7 @@ export default function Home() {
           <div className="eyebrow">AI INSIGHTS. REAL EXPERIENCE. YOUR DECISION.</div>
           <h1>Think Wider.<br/>Decide Smarter.<br/><em>Go Further.</em></h1>
           <p>Your AI partner for opportunities, products, people and possibilities — built from your experience, designed for what’s next.</p>
-          <div className="actions"><a href="#decision-lab">New Opportunity →</a><a className="secondary" href="#decision-lab">Open Decision Map</a></div>
+          <div className="actions"><a href="#decision-lab">New Opportunity →</a><a className="secondary" href="#knowledge-map">Open Decision Map</a></div>
           <div className="principle">AI advises.<br/>P decides.</div>
         </div>
 
@@ -50,10 +51,11 @@ export default function Home() {
 
       <DecisionLab />
 
+      <KnowledgeMap />
+
       <KnowledgePulse />
 
       <footer><blockquote>“The important thing is not to stop questioning.”<small>— Albert Einstein</small></blockquote><div className="outcomes"><span>Stronger<br/>Decisions</span><span>Higher<br/>Win Rate</span><span>Healthier<br/>Business</span><span>A More<br/>Focused You</span></div></footer>
     </main>
   );
 }
-
