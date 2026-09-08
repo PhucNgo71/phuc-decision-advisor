@@ -13,7 +13,9 @@
         "domain": "brand",
         "statement": "Use a friendly, optimistic seal mascot associated with the letter P as the primary character for P Decision Advisor.",
         "adviceImpact": "contextual",
-        "evidence": ["/public/phuc-sealion.png"],
+        "evidence": [
+          "/public/phuc-sealion.png"
+        ],
         "notes": "Visual preference only; it must not influence business recommendations."
       },
       {
@@ -30,7 +32,9 @@
         "domain": "product",
         "statement": "The preferred homepage promise is: Think Wider. Decide Smarter. Go Further.",
         "adviceImpact": "contextual",
-        "evidence": ["/docs/reference/homepage-concept.png"]
+        "evidence": [
+          "/docs/reference/homepage-concept.png"
+        ]
       },
       {
         "id": "product-human-owned-decision",
@@ -38,7 +42,9 @@
         "domain": "product",
         "statement": "The AI advises and P makes the final decision.",
         "adviceImpact": "direct",
-        "evidence": ["/docs/reference/homepage-concept.png"],
+        "evidence": [
+          "/docs/reference/homepage-concept.png"
+        ],
         "notes": "Consistent with the existing product reasoning contract."
       },
       {
@@ -47,7 +53,9 @@
         "domain": "product",
         "statement": "Present the advisor as a connected set of Product, Customer, Commercial, Relationship, Competition, Execution, Sustainability, Project, and Learning brains.",
         "adviceImpact": "contextual",
-        "evidence": ["/docs/reference/homepage-concept.png"],
+        "evidence": [
+          "/docs/reference/homepage-concept.png"
+        ],
         "notes": "A navigation and communication model; reasoning still follows the formal Decision Model."
       },
       {
@@ -59,6 +67,67 @@
         "notes": "Operational context only. Connection errors and setup instructions from the conversation were intentionally not promoted into advisor knowledge."
       }
     ]
+  },
+  {
+    "id": "official-brand-research-2026-09-08",
+    "sourceUrl": "https://www.steelcase.com/products/office-chairs/leap/",
+    "sourceTitle": "Official manufacturer research: Steelcase, Haworth and Herman Miller",
+    "importedAt": "2026-09-08",
+    "reviewStatus": "reviewed",
+    "summary": "Added manufacturer-supported task-chair knowledge for Steelcase, Haworth and Herman Miller. This update records product capabilities and a comparison framework; it does not establish a preferred brand.",
+    "records": [
+      {
+        "id": "steelcase-task-seating-2026-09-08",
+        "knowledgeType": "fact",
+        "domain": "product",
+        "statement": "Steelcase's task-chair portfolio includes Leap with LiveBack and Natural Glide, Gesture with 360-degree arms for technology-shaped postures, and Karman with a responsive hybrid suspension seat.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.steelcase.com/products/office-chairs/leap/",
+          "https://www.steelcase.com/products/office-chairs/gesture/",
+          "https://www.steelcase.com/products/office-chairs/steelcase-karman/"
+        ],
+        "notes": "Verify the exact local configuration, warranty, pricing, availability and certifications before recommending."
+      },
+      {
+        "id": "haworth-task-seating-2026-09-08",
+        "knowledgeType": "fact",
+        "domain": "product",
+        "statement": "Haworth's task-chair portfolio includes Fern with Wave Suspension and Zody with adjustable asymmetrical lumbar support; official product pages also publish model-level ergonomic and sustainability certifications.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.haworth.com/na/en/products/seating/office-chairs/fern-office-chair.html",
+          "https://www.haworth.com/eu/en/products/office-chairs/zody-1.html",
+          "https://www.haworth.com/na/en/products/seating/office-chairs.html"
+        ],
+        "notes": "Certification, warranty and model specifications vary by market and configuration; verify for the project location."
+      },
+      {
+        "id": "herman-miller-task-seating-2026-09-08",
+        "knowledgeType": "fact",
+        "domain": "product",
+        "statement": "Herman Miller's performance seating includes Aeron in three sizes with 8Z Pellicle and optional PostureFit SL, Embody for pressure distribution and supported movement, and Sayl with an unframed 3D Intelligent suspension back.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.hermanmiller.com/products/seating/office-chairs/aeron-chair/",
+          "https://www.hermanmiller.com/products/seating/office-chairs/embody-chairs/",
+          "https://www.hermanmiller.com/products/seating/office-chairs/sayl-chairs/product-details/"
+        ],
+        "notes": "Verify local warranty coverage, dealer support, configuration, lead time and commercial terms."
+      },
+      {
+        "id": "premium-task-chair-comparison-framework-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "product",
+        "statement": "Compare Steelcase, Haworth and Herman Miller at model and configuration level—not by brand name alone—using user fit, adjustability, body-size coverage, task pattern, materials, verified certifications, warranty and dealer support, lead time, installed cost and after-sales service.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.steelcase.com/products/office-chairs/leap/",
+          "https://www.haworth.com/na/en/products/seating/office-chairs.html",
+          "https://www.hermanmiller.com/products/seating/office-chairs/performance-seating/"
+        ],
+        "notes": "This is a comparison method, not a brand preference or hard rule. A user trial and project-specific evidence can change the advice."
+      }
+    ]
   }
 ]
-
