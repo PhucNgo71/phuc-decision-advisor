@@ -74,7 +74,7 @@
     "sourceTitle": "Official manufacturer research: Steelcase, Haworth and Herman Miller",
     "importedAt": "2026-09-08",
     "reviewStatus": "reviewed",
-    "summary": "Added manufacturer-supported task-chair knowledge for Steelcase, Haworth and Herman Miller. This update records product capabilities and a comparison framework; it does not establish a preferred brand.",
+    "summary": "Added manufacturer-supported task-chair knowledge for Steelcase, Haworth and Herman Miller, verified their US headquarters, and recorded the user's judgment that they form the main competitor set. Product facts remain separate from competitive judgment.",
     "records": [
       {
         "id": "steelcase-task-seating-2026-09-08",
@@ -127,6 +127,27 @@
           "https://www.hermanmiller.com/products/seating/office-chairs/performance-seating/"
         ],
         "notes": "This is a comparison method, not a brand preference or hard rule. A user trial and project-specific evidence can change the advice."
+      },
+      {
+        "id": "us-based-brand-headquarters-2026-09-08",
+        "knowledgeType": "fact",
+        "domain": "product",
+        "statement": "Steelcase, Haworth and Herman Miller are US-based workplace-furniture brands with headquarters in Grand Rapids, Holland and Zeeland, Michigan, respectively.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.steelcase.com/about/connect/contact-us/",
+          "https://www.haworth.com/na/en/about/about-haworth.html",
+          "https://www.hermanmiller.com/contact/"
+        ],
+        "notes": "Headquarters locations are verified from each manufacturer's official contact or company page."
+      },
+      {
+        "id": "main-us-competitor-set-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "product",
+        "statement": "In the user's current competitive context, Steelcase, Haworth and Herman Miller are the three main US-based competitors to track.",
+        "adviceImpact": "direct",
+        "notes": "User-provided competitive judgment. Revalidate the active competitor set for each geography, opportunity and scope; do not treat it as a universal market fact."
       }
     ]
   }
