@@ -158,5 +158,84 @@
         "notes": "User-defined Grade A classification. Use it for premium-tier comparisons, but revalidate model fit, specification, local support, lead time and commercial terms for each opportunity."
       }
     ]
+  },
+  {
+    "id": "stakeholder-influence-framework-2026-09-08",
+    "sourceUrl": "https://www.pmi.org/learning/library/stakeholder-analysis-pivotal-practice-projects-890Matcher",
+    "sourceTitle": "Stakeholder influence and decision-maker impact",
+    "importedAt": "2026-09-08",
+    "reviewStatus": "reviewed",
+    "summary": "Added a reusable stakeholder framework for workplace-project pursuits. It separates importance from influence, distinguishes formal authority from informal influence, and links every key stakeholder to a project decision, evidence need and ethical engagement action.",
+    "records": [
+      {
+        "id": "stakeholder-importance-vs-influence-2026-09-08",
+        "knowledgeType": "fact",
+        "domain": "relationship",
+        "statement": "Stakeholder importance and influence are different: importance reflects how necessary their needs are to project success, while influence reflects their power to control decisions, resources, implementation or other people's actions.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.pmi.org/learning/library/stakeholder-analysis-pivotal-practice-projects-8905",
+          "https://www.pmi.org/learning/library/2019/04/07/15/39/project-success-stakeholder-analysis-7987"
+        ],
+        "notes": "A high-importance user may have limited approval authority; a high-influence sponsor may be less involved day to day."
+      },
+      {
+        "id": "stakeholder-power-interest-attitude-map-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "relationship",
+        "statement": "For each project, map every named stakeholder by formal decision power, informal influence, interest, attitude, impact, access and relationship strength; update the map when the project phase or stakeholder behavior changes.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.pmi.org/learning/library/principles-involve-stakeholders-projects-9375",
+          "https://www.pmi.org/learning/library/2022/08/18/21/11/change-intelligent-stakeholder-engagement-9892"
+        ],
+        "notes": "Attitude can often change through relevant evidence and engagement; power and formal authority may be harder to change."
+      },
+      {
+        "id": "workplace-project-decision-roles-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "relationship",
+        "statement": "Test the decision path across the economic decision maker, executive sponsor, end-user champion, procurement, project manager, designer or consultant, facilities, finance, IT, ESG, legal and any gatekeeper or blocker. Record who recommends, specifies, approves, signs, pays, uses and can veto.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.pmi.org/learning/library/conflict-management-action-chinese-organizations-6903"
+        ],
+        "notes": "These are candidate roles, not a fixed organization chart. One person may hold several roles and titles alone do not prove influence."
+      },
+      {
+        "id": "stakeholder-evidence-plan-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "strategy",
+        "statement": "Winning support requires role-specific evidence: business value for the economic decision maker, strategic fit for the sponsor, user outcomes and trials for end users, compliance and comparability for procurement, delivery control for the project manager, design integrity for consultants, and risk, service and lifecycle evidence for operational stakeholders.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.pmi.org/learning/library/stakeholder-management-task-project-success-7736"
+        ],
+        "notes": "Engage through relevant value and transparent evidence; never use manipulation, hidden inducements or unsupported claims."
+      },
+      {
+        "id": "stakeholder-priority-action-matrix-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "strategy",
+        "statement": "Prioritize high-power, high-interest stakeholders for close engagement; keep high-power, lower-interest stakeholders satisfied; keep high-interest, lower-power stakeholders informed and involved; monitor lower-power, lower-interest stakeholders for changes.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.pmi.org/learning/library/stakeholder-management-task-project-success-7736",
+          "https://www.pmi.org/learning/library/stakeholder-management-plan-6090"
+        ],
+        "notes": "Do not ignore a low-interest stakeholder with veto authority; their interest can rise suddenly."
+      },
+      {
+        "id": "stakeholder-win-objective-link-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "strategy",
+        "statement": "Before selecting product or price, connect the Win Objective to the real decision coalition: identify whose support is necessary, what each person must believe, which conflicts remain, and what new evidence could change the recommendation.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.pmi.org/learning/library/stakeholder-analysis-pivotal-practice-projects-8905"
+        ],
+        "notes": "The objective is not to pressure a decision maker; it is to build an evidence-backed coalition that can support a successful project outcome."
+      }
+    ]
   }
 ]
