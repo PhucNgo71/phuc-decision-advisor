@@ -11,3 +11,5 @@
 .km-rivals b{background:#fff7e8;border-color:#f2d69a;color:#7f5c1d}
 .km-decision-path{background:#fff;border-color:#d5e8f5;color:#173b5c;box-shadow:0 12px 32px rgba(44,93,132,.09)}
 .km-guardrail{color:#59758e}.km-guardrail b{color:#173b5c}
+
+.km-node ul{color:#365b76}.km-node p b{color:#173b5c}
