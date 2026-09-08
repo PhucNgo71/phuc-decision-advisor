@@ -1,0 +1,110 @@
+{
+  "version": "2026-09-08",
+  "source": "https://www.ergovn.com/",
+  "reviewedAt": "2026-09-08",
+  "status": "publicly_listed_maker_network",
+  "makers": [
+    {
+      "name": "Zenith",
+      "publicAnchor": "Precinct Pod",
+      "confirmedUse": "Focus workstation and practical privacy"
+    },
+    {
+      "name": "Humanscale",
+      "publicAnchor": "Freedom Chair",
+      "confirmedUse": "Ergonomic task seating"
+    },
+    {
+      "name": "Wilkhahn",
+      "publicAnchor": "Graph Table",
+      "confirmedUse": "Executive conference and boardroom"
+    },
+    {
+      "name": "Andreu World",
+      "publicAnchor": null,
+      "confirmedUse": null
+    },
+    {
+      "name": "Framery",
+      "publicAnchor": "Framery One Lounge",
+      "confirmedUse": "Calls, video meetings and focused work"
+    },
+    {
+      "name": "HOLMRIS B8",
+      "publicAnchor": "Neighborhood",
+      "confirmedUse": "Informal exchange, breaks and flexible work"
+    },
+    {
+      "name": "HAY",
+      "publicAnchor": "Result Chair",
+      "confirmedUse": "Training, cafe, library and flexible spaces"
+    },
+    {
+      "name": "Milliken",
+      "publicAnchor": null,
+      "confirmedUse": "Carpet tile reference category"
+    },
+    {
+      "name": "Teknion",
+      "publicAnchor": null,
+      "confirmedUse": null
+    },
+    {
+      "name": "Markant",
+      "publicAnchor": null,
+      "confirmedUse": null
+    },
+    {
+      "name": "Lamex",
+      "publicAnchor": null,
+      "confirmedUse": null
+    },
+    {
+      "name": "Arper",
+      "publicAnchor": null,
+      "confirmedUse": null
+    },
+    {
+      "name": "Actiforce",
+      "publicAnchor": null,
+      "confirmedUse": null
+    },
+    {
+      "name": "Wintech",
+      "publicAnchor": null,
+      "confirmedUse": null
+    },
+    {
+      "name": "Proffice",
+      "publicAnchor": null,
+      "confirmedUse": null
+    },
+    {
+      "name": "Artifort",
+      "publicAnchor": null,
+      "confirmedUse": null
+    },
+    {
+      "name": "Network++",
+      "publicAnchor": null,
+      "confirmedUse": null
+    }
+  ],
+  "markets": [
+    "Office",
+    "Education",
+    "Hospitality"
+  ],
+  "geography": [
+    "Vietnam",
+    "APAC"
+  ],
+  "capabilities": [
+    "Strategic consultation",
+    "Sourcing and consultation",
+    "Project management",
+    "Supply-chain management",
+    "Supply and installation"
+  ],
+  "decisionGuardrail": "Confirm representation status, product coverage, territory, authorization, local availability, warranty, lead time and service before each bid. A listed maker is not automatically equivalent to a competitor model."
+}
