@@ -1,7 +1,7 @@
 export type WinObjective = 'must_win' | 'target_scope' | 'defensive' | 'partial_win' | 'profit_led' | 'reference_led';
 export type KnowledgeType = 'fact' | 'current_preference' | 'experience' | 'judgment' | 'hard_rule' | 'temporary_context';
 
-export type LearningDomain = 'brand' | 'product' | 'operations';
+export type LearningDomain = 'brand' | 'product' | 'customer' | 'relationship' | 'competition' | 'commercial' | 'execution' | 'strategy' | 'operations';
 
 export interface LearningRecord {
   id: string;
