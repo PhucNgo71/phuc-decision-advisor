@@ -74,7 +74,7 @@
     "sourceTitle": "Official manufacturer research: Steelcase, Haworth and Herman Miller",
     "importedAt": "2026-09-08",
     "reviewStatus": "reviewed",
-    "summary": "Added manufacturer-supported task-chair knowledge for Steelcase, Haworth and Herman Miller, verified their US headquarters, and recorded the user's judgment that they form the main competitor set. Product facts remain separate from competitive judgment.",
+    "summary": "Added manufacturer-supported task-chair knowledge for Steelcase, Haworth and Herman Miller, verified their US headquarters, and recorded the user's judgments that they form the main competitor set and belong to the Grade A range. Product facts remain separate from competitive and tier judgments.",
     "records": [
       {
         "id": "steelcase-task-seating-2026-09-08",
@@ -148,6 +148,14 @@
         "statement": "In the user's current competitive context, Steelcase, Haworth and Herman Miller are the three main US-based competitors to track.",
         "adviceImpact": "direct",
         "notes": "User-provided competitive judgment. Revalidate the active competitor set for each geography, opportunity and scope; do not treat it as a universal market fact."
+      },
+      {
+        "id": "grade-a-us-competitor-range-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "product",
+        "statement": "Classify Steelcase, Haworth and Herman Miller as Grade A brands in the current portfolio and competitor range.",
+        "adviceImpact": "direct",
+        "notes": "User-defined Grade A classification. Use it for premium-tier comparisons, but revalidate model fit, specification, local support, lead time and commercial terms for each opportunity."
       }
     ]
   }
