@@ -86,7 +86,7 @@ export default function DecisionLab() {
 
     const scopes = scopeLines.map((line) => {
       const riskRate = riskRates[line.risk];
-      const contingency = line.cost * riskRate;
+      const contingency = Math.round(line.cost * riskRate);
       const estimatedCost = line.cost + contingency;
       const margin =
         line.sellingPrice > 0
@@ -349,9 +349,9 @@ export default function DecisionLab() {
                     )
                   }
                 >
-                  <option value="low">Low � 3%</option>
-                  <option value="medium">Medium � 7%</option>
-                  <option value="high">High � 12%</option>
+                  <option value="low">Low - 3%</option>
+                  <option value="medium">Medium - 7%</option>
+                  <option value="high">High - 12%</option>
                 </select>
               </label>
               <div className="scope-output">
@@ -413,7 +413,7 @@ export default function DecisionLab() {
             {result.belowFloor
               ? 'Below hard floor'
               : result.belowTarget
-                ? 'Above floor � below target'
+                ? 'Above floor - below target'
                 : 'Target met'}
           </em>
         </div>
@@ -468,8 +468,8 @@ export default function DecisionLab() {
           <div className="situation">
             <small>Situation</small>
             <p>
-              {customer || 'Unnamed customer'} � {result.scopes.length} scopes �{' '}
-              {objectiveLabels[objective]} � GM {percent(result.blendedMargin)}
+              {customer || 'Unnamed customer'} - {result.scopes.length} scopes -{' '}
+              {objectiveLabels[objective]} - GM {percent(result.blendedMargin)}
             </p>
           </div>
           <div className="scenario-list">
