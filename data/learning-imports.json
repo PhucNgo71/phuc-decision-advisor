@@ -237,5 +237,92 @@
         "notes": "The objective is not to pressure a decision maker; it is to build an evidence-backed coalition that can support a successful project outcome."
       }
     ]
+  },
+  {
+    "id": "ergovn-brand-and-bid-map-2026-09-08",
+    "sourceUrl": "https://www.ergovn.com/",
+    "sourceTitle": "ERGOVN brand portfolio and bid-positioning map",
+    "importedAt": "2026-09-08",
+    "reviewStatus": "reviewed",
+    "summary": "Collected ERGOVN's publicly listed maker network, selected product anchors, project scopes and delivery capabilities. Added a strategic map for using the portfolio against Grade A US competitors without claiming unsupported one-to-one equivalence.",
+    "records": [
+      {
+        "id": "ergovn-listed-makers-2026-09-08",
+        "knowledgeType": "fact",
+        "domain": "product",
+        "statement": "ERGOVN publicly lists 17 makers: Zenith, Humanscale, Wilkhahn, Andreu World, Framery, HOLMRIS B8, HAY, Milliken, Teknion, Markant, Lamex, Arper, Actiforce, Wintech, Proffice, Artifort and Network++.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.ergovn.com/"
+        ],
+        "notes": "Treat this as the public maker network as of 8 September 2026. Confirm representation status, territory, availability and authorization before each bid."
+      },
+      {
+        "id": "ergovn-selected-product-anchors-2026-09-08",
+        "knowledgeType": "fact",
+        "domain": "product",
+        "statement": "ERGOVN highlights these selected product anchors: Humanscale Freedom task chair, HAY Result multi-use chair, Framery One Lounge acoustic pod, HOLMRIS B8 Neighborhood setting, Zenith Precinct Pod focus workstation and Wilkhahn Graph conference table.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.ergovn.com/"
+        ],
+        "notes": "These examples demonstrate use cases; they are not the complete product range."
+      },
+      {
+        "id": "ergovn-project-scope-2026-09-08",
+        "knowledgeType": "fact",
+        "domain": "strategy",
+        "statement": "ERGOVN positions itself for Office, Education and Hospitality projects across Vietnam and APAC, with public reference categories including office workspace, acoustic pods, education settings, carpet tile, ergonomic workplace and furniture settings.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.ergovn.com/"
+        ],
+        "notes": "Project references on the site identify categories and makers but do not by themselves prove suitability for a new opportunity."
+      },
+      {
+        "id": "ergovn-delivery-capabilities-2026-09-08",
+        "knowledgeType": "fact",
+        "domain": "execution",
+        "statement": "ERGOVN describes an end-to-end offer covering strategic consultation, sourcing and consultation, project management, supply-chain management, supply and installation, organized around insight, specification and delivery.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.ergovn.com/"
+        ],
+        "notes": "Use these as claimed public capabilities; validate the delivery plan, resources and evidence for the specific bid."
+      },
+      {
+        "id": "ergovn-core-scope-map-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "strategy",
+        "statement": "Use the ERGOVN maker network as a scope portfolio: ergonomic and task seating; workstations and workplace systems; acoustic privacy; conference and collaboration; design-led ancillary furniture; flooring; height-adjustable components; and locally supported value-engineering options. Build the bid around the strongest verified combination for the project rather than forcing one maker across every scope.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.ergovn.com/"
+        ],
+        "notes": "This grouping is a strategic interpretation of the public maker network. Verify each maker's exact product coverage and local commercial position."
+      },
+      {
+        "id": "ergovn-vs-grade-a-us-competitors-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "competition",
+        "statement": "Against Grade A US competitors Steelcase, Haworth and Herman Miller, ERGOVN's core bid position should emphasize multi-brand freedom, fit-for-scope specification, Vietnam/APAC insight, design-team collaboration, budget balancing, supply-chain control, installation and after-sales execution—then prove product-level equivalence or advantage with compliant specifications, samples, trials, warranty, lead time and total installed cost.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.ergovn.com/"
+        ],
+        "notes": "Do not claim that a listed brand is automatically equivalent to a competitor. Compare exact models, configurations, certifications, warranty, service and project evidence."
+      },
+      {
+        "id": "ergovn-bid-unknowns-2026-09-08",
+        "knowledgeType": "judgment",
+        "domain": "competition",
+        "statement": "Before using the portfolio in a bid, confirm the decision maker's success criteria, specified or incumbent brand, approved-equal rules, stakeholder influence map, user trial requirements, local stock and lead time, warranty responsibility, installation capacity, lifecycle service, price position and switching risk.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.ergovn.com/"
+        ],
+        "notes": "These unknowns can materially change the recommended maker, scope and commercial scenario."
+      }
+    ]
   }
 ]
