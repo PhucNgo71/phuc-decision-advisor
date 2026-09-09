@@ -417,5 +417,115 @@
         "notes": "Revalidate the actual contracting and distribution structure for every geography and opportunity."
       }
     ]
+  },
+  {
+    "id": "vietnam-import-supply-chain-2026-09-09",
+    "sourceUrl": "https://vntr.moit.gov.vn/how-to-use-this-site",
+    "sourceTitle": "Vietnam import supply-chain, shipping and tax framework",
+    "importedAt": "2026-09-09",
+    "reviewStatus": "reviewed",
+    "summary": "Added a landed-cost and supply-chain decision framework for furniture and project goods imported to Vietnam from China, the EU and Australia. Tariff advice stays conditional on HS classification, originating status, proof of origin, customs value and current regulations; no blanket country tax rate was created.",
+    "records": [
+      {
+        "id": "vietnam-import-hs-and-tariff-lookup-2026-09-09",
+        "knowledgeType": "fact",
+        "domain": "commercial",
+        "statement": "Goods entering Vietnam require an HS classification. The applicable import tariff depends on the product's HS code, origin and the tariff schedule that can legally be claimed; Vietnam's National Trade Repository provides MFN and preferential FTA tariff tables plus rules-of-origin information.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://vntr.moit.gov.vn/hscode-la-gi",
+          "https://vntr.moit.gov.vn/how-to-use-this-site",
+          "https://vntr.moit.gov.vn/tariff/tfta"
+        ],
+        "notes": "Never estimate duty from country name or product description alone. Confirm the current Vietnam HS code and tariff at declaration."
+      },
+      {
+        "id": "vietnam-import-tax-base-2026-09-09",
+        "knowledgeType": "fact",
+        "domain": "commercial",
+        "statement": "For Vietnam imports, customs value is based on the actual value payable up to the first import border gate under the applicable customs-valuation rules. Import VAT is calculated on the dutiable value plus import duty and any applicable additional import, excise or environmental taxes.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://kv03.customs.gov.vn/index.jsp?aid=7372&cid=30&pageId=2",
+          "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Integrated-document-18-VBHN-BTC-2026-Decree-elaboration-of-the-Law-on-Value-added-Tax-721406.aspx"
+        ],
+        "notes": "The VAT and duty rates remain HS-code- and policy-specific. Reconfirm them with the customs broker before quoting."
+      },
+      {
+        "id": "china-vietnam-preferential-origin-2026-09-09",
+        "knowledgeType": "fact",
+        "domain": "commercial",
+        "statement": "Qualifying China-origin goods may access preferential treatment under ACFTA or RCEP when the product-specific origin rule and documentary requirements are met. ACFTA uses Certificate of Origin Form E; shipping from China does not by itself prove Chinese origin.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://vntr.moit.gov.vn/fta/9/0",
+          "https://vntr.moit.gov.vn/storage/agreement/acfta/6-protocol-to-amend-the-framework-agreement-certain-agreements.pdf",
+          "https://rcepsec.org/wp-content/uploads/2024/08/Revised-RCEP-Implementing-Guidelines.pdf"
+        ],
+        "notes": "Compare the eligible ACFTA, RCEP and MFN rates for the exact HS line, then retain the valid proof of origin and transport documents."
+      },
+      {
+        "id": "eu-vietnam-preferential-origin-2026-09-09",
+        "knowledgeType": "fact",
+        "domain": "commercial",
+        "statement": "Qualifying EU-origin goods may receive EVFTA tariff treatment when the agreement's product-specific origin rules and proof-of-origin requirements are satisfied. Depending on the case, proof can include a certificate of origin or an eligible origin declaration or statement.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://trade.ec.europa.eu/access-to-markets/en/assets/VN_ENG_Protocol-1.pdf"
+        ],
+        "notes": "An EU invoice or EU shipping port is not sufficient by itself. Confirm originating status and the acceptable proof for the shipment."
+      },
+      {
+        "id": "australia-vietnam-preferential-origin-2026-09-09",
+        "knowledgeType": "fact",
+        "domain": "commercial",
+        "statement": "Qualifying Australia-origin goods may access preferential treatment under AANZFTA or RCEP when the applicable product-specific rule of origin is met. AANZFTA claims require compliant origin documentation, including the applicable Certificate of Origin process.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.dfat.gov.au/trade/agreements/in-force/aanzfta/for-business",
+          "https://www.dfat.gov.au/trade/agreements/in-force/aanzfta/official-documents/official-documents",
+          "https://rcepsec.org/wp-content/uploads/2024/08/Revised-RCEP-Implementing-Guidelines.pdf"
+        ],
+        "notes": "Compare the eligible AANZFTA, RCEP and MFN rates for the exact HS line and verify current certification procedures."
+      },
+      {
+        "id": "vietnam-landed-cost-formula-2026-09-09",
+        "knowledgeType": "judgment",
+        "domain": "commercial",
+        "statement": "Estimate landed project cost as product value plus origin handling and export charges, international freight, insurance, dutiable additions, import duty, non-recoverable taxes, customs brokerage, port and terminal charges, inspection, storage or demurrage exposure, inland delivery, installation handling and a documented risk reserve.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://vntr.moit.gov.vn/how-to-use-this-site"
+        ],
+        "notes": "Separate recoverable VAT from true project cost when the importing entity can legally claim input VAT. Finance and the customs broker must confirm treatment."
+      },
+      {
+        "id": "origin-lane-planning-china-eu-australia-2026-09-09",
+        "knowledgeType": "judgment",
+        "domain": "execution",
+        "statement": "Use different planning assumptions by origin: China often offers more regional routing and consolidation choices; EU cargo normally needs a longer ocean-planning horizon and stronger transshipment control; Australian routing depends heavily on origin port and sailing frequency. Obtain a current forwarder quote and carrier schedule for every bid.",
+        "adviceImpact": "direct",
+        "notes": "This is a planning pattern, not a promised transit time. Port pair, mode, season, equipment, consolidation and carrier schedule can change the result."
+      },
+      {
+        "id": "import-document-control-gate-2026-09-09",
+        "knowledgeType": "judgment",
+        "domain": "execution",
+        "statement": "Before shipping, align the purchase order, Incoterm, commercial invoice, packing list, bill of lading or air waybill, HS classification, proof of origin, product description, quantities, values and any permits or inspection requirements. Resolve discrepancies before cargo arrival.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://vntr.moit.gov.vn/how-to-use-this-site"
+        ],
+        "notes": "Late or inconsistent documents can delay clearance, lose preferential duty treatment and create storage or demurrage costs."
+      },
+      {
+        "id": "import-bid-risk-and-margin-gate-2026-09-09",
+        "knowledgeType": "judgment",
+        "domain": "strategy",
+        "statement": "A bid using imported goods should show a base landed cost and a risk-adjusted landed cost. Test freight volatility, foreign exchange, origin-document failure, customs reclassification, inspection, damage, delay, storage, demurrage and last-mile installation against project margin before P approves the price.",
+        "adviceImpact": "direct",
+        "notes": "Do not hide logistics contingency inside product cost. Keep assumptions visible and refresh them when the quote validity or shipping plan changes."
+      }
+    ]
   }
 ]
