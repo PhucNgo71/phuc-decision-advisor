@@ -324,5 +324,98 @@
         "notes": "These unknowns can materially change the recommended maker, scope and commercial scenario."
       }
     ]
+  },
+  {
+    "id": "flokk-holmrisb8-review-2026-09-09",
+    "sourceUrl": "https://www.flokk.com/about-us",
+    "sourceTitle": "Flokk and HOLMRIS B8 portfolio and competition review",
+    "importedAt": "2026-09-09",
+    "reviewStatus": "reviewed",
+    "summary": "Added official-source knowledge on Flokk as a design-led multi-brand workplace-furniture group and HOLMRIS B8 as a multi-brand design, project-delivery and circular-service partner. Added a bid comparison method without creating an unsupported portfolio preference or universal competitor classification.",
+    "records": [
+      {
+        "id": "flokk-company-and-brand-family-2026-09-09",
+        "knowledgeType": "fact",
+        "domain": "product",
+        "statement": "Flokk is an Oslo-headquartered family of specialized, design-led workplace-furniture brands. Its current official About page lists HÅG, Giroflex, Offecct, Connection, RH, Profim, 9to5 Seating, Stylex, VIA Seating, Malmstolen and Spec.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.flokk.com/about-us"
+        ],
+        "notes": "Treat the list as current to 9 September 2026. Verify the active brand portfolio, local distribution, territory and model availability before a bid."
+      },
+      {
+        "id": "flokk-workplace-and-sustainability-offer-2026-09-09",
+        "knowledgeType": "fact",
+        "domain": "product",
+        "statement": "Flokk positions its group around professional and public-space furniture, with roots in Scandinavian task seating and capabilities spanning chairs, sofas, benches, stools and spatial solutions. Its sustainable-design method emphasizes lower weight, fewer components, material choice, long life and design for disassembly.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.flokk.com/about-us",
+          "https://www.flokk.com/about-us/sustainability/our-principles-for-sustainable-design"
+        ],
+        "notes": "Product sustainability, certification, recycled-content and warranty claims must be verified at exact model and market level."
+      },
+      {
+        "id": "flokk-bid-comparison-method-2026-09-09",
+        "knowledgeType": "judgment",
+        "domain": "competition",
+        "statement": "When Flokk appears in a bid, identify the exact Flokk brand and model instead of comparing against the group name alone. Test ergonomics, application fit, verified environmental data and certifications, warranty, local service, lead time, trial results and total installed cost.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.flokk.com/about-us",
+          "https://www.flokk.com/about-us/sustainability/certificates-new"
+        ],
+        "notes": "This is a comparison method, not a claim that Flokk is always a direct competitor or Grade A equivalent."
+      },
+      {
+        "id": "holmrisb8-company-and-market-scope-2026-09-09",
+        "knowledgeType": "fact",
+        "domain": "strategy",
+        "statement": "HOLMRIS B8 describes itself as a furniture-industry sales and design company with roots dating to 1914, more than 350 furniture experts, access to its own designs and products from more than 1,000 suppliers, and specialist activity across Office, Learning, Care and Hospitality.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.holmrisb8.com/about-holmris-b8/",
+          "https://www.holmrisb8.com/cases/"
+        ],
+        "notes": "Verify current geographic coverage, supplier authorization and delivery resources for the opportunity."
+      },
+      {
+        "id": "holmrisb8-service-and-circular-capabilities-2026-09-09",
+        "knowledgeType": "fact",
+        "domain": "execution",
+        "statement": "HOLMRIS B8 publicly offers furniture advice, project management, delivery and assembly, relocation, storage, repairs and upgrades, furniture care, registration, take-back, climate data, resale, donation and sorting. This extends its proposition beyond new-product supply.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.holmrisb8.com/what-we-do/"
+        ],
+        "notes": "Use these as public company claims and validate the exact contractual scope, geography, documentation and service-level commitment."
+      },
+      {
+        "id": "holmrisb8-competitive-position-2026-09-09",
+        "knowledgeType": "judgment",
+        "domain": "competition",
+        "statement": "Treat HOLMRIS B8 as a service-led, multi-brand project integrator when it is active in an opportunity. ERGOVN should compare design-team access, breadth of sourcing, project control, local and APAC execution, installation, lifecycle care, circular services, climate documentation and total delivered value—not furniture price alone.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.holmrisb8.com/",
+          "https://www.holmrisb8.com/what-we-do/"
+        ],
+        "notes": "Opportunity-specific judgment only. Do not assume direct competition, identical territory or equivalent capability without evidence."
+      },
+      {
+        "id": "flokk-vs-holmrisb8-role-distinction-2026-09-09",
+        "knowledgeType": "judgment",
+        "domain": "strategy",
+        "statement": "Do not treat Flokk and HOLMRIS B8 as the same competitor type: Flokk is principally a manufacturer group with differentiated product brands, while HOLMRIS B8 presents a sourcing, design, delivery and circular-service platform. The win strategy and evidence plan should match the role each one plays in the bid.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.flokk.com/about-us",
+          "https://www.holmrisb8.com/about-holmris-b8/",
+          "https://www.holmrisb8.com/what-we-do/"
+        ],
+        "notes": "Revalidate the actual contracting and distribution structure for every geography and opportunity."
+      }
+    ]
   }
 ]
