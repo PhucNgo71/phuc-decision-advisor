@@ -1,3 +1,5 @@
+import { calculateVietnamLandedCost, type LandedCostInput } from '../landed-cost';
+
 export type McpToolRisk = 'read' | 'calculate' | 'propose' | 'write';
 
 export interface McpTool<Input = unknown, Output = unknown> {
@@ -42,6 +44,15 @@ registerMcpTool({
 });
 
 registerMcpTool({
+  name: 'costing.calculate_vietnam_landed_cost',
+  description:
+    'Deterministically estimate Vietnam landed cost from human-supplied/grounded values, freight, duty rate, VAT rate, fees and contingency. It never invents HS codes or tariff rates.',
+  risk: 'calculate',
+  requiresHumanApproval: false,
+  execute: (input) => calculateVietnamLandedCost(input as LandedCostInput),
+});
+
+registerMcpTool({
   name: 'advisor.propose_action',
   description: 'Create a proposed action for human review. It never executes the business decision itself.',
   risk: 'propose',
@@ -51,7 +62,8 @@ registerMcpTool({
 
 registerMcpTool({
   name: 'advisor.execute_approved_action',
-  description: 'Reserved write boundary. It can only be used after explicit human approval and should be connected to a narrowly scoped adapter.',
+  description:
+    'Reserved write boundary. It can only be used after explicit human approval and should be connected to a narrowly scoped adapter.',
   risk: 'write',
   requiresHumanApproval: true,
   execute: () => ({ status: 'not_configured', message: 'No write adapter is configured.' }),
