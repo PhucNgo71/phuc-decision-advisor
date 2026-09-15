@@ -21,7 +21,13 @@ export default function Home() {
       <header className="topbar">
         <div className="brand"><img src="/phuc-sealion.png" alt="P mascot"/><div><b>P</b><span>Decision Advisor</span></div></div>
         <nav><a className="active" href="#top">Home</a><a href="#decision-lab">Opportunities</a><a href="#decision-lab">Products</a><a href="#decision-lab">Customers</a><a href="#knowledge-map">Map</a><a href="#knowledge">Updates</a></nav>
-        <div className="profile">P <span>⌄</span></div>
+        <div className="utility-actions">
+          <div className="astra-badge" title="Advisor powered by GPT-6 Astra">
+            <span aria-hidden="true">✦</span>
+            <div><b>ASTA</b><small>GPT-6 Astra</small></div>
+          </div>
+          <div className="profile">P <span>⌄</span></div>
+        </div>
       </header>
 
       <section className="hero">
@@ -56,6 +62,17 @@ export default function Home() {
       <KnowledgePulse />
 
       <footer><blockquote>“The important thing is not to stop questioning.”<small>— Albert Einstein</small></blockquote><div className="outcomes"><span>Stronger<br/>Decisions</span><span>Higher<br/>Win Rate</span><span>Healthier<br/>Business</span><span>A More<br/>Focused You</span></div></footer>
+
+      <a
+        className="whatsapp-help"
+        href="https://wa.me/84903017957?text=Hello%20P%2C%20I%20need%20urgent%20help%20because%20I%20cannot%20find%20the%20correct%20advice%20on%20P%20Decision%20Advisor."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact P on WhatsApp for urgent help"
+      >
+        <span className="whatsapp-icon" aria-hidden="true">☎</span>
+        <span><b>Need urgent help?</b><small>Ask P on WhatsApp</small></span>
+      </a>
     </main>
   );
 }
