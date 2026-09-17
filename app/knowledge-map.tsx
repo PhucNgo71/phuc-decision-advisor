@@ -37,6 +37,25 @@ export default function KnowledgeMap() {
         <strong>Define this before product or price.</strong>
       </div>
 
+      <div className="km-focus-lines" aria-label="Priority knowledge lines">
+        <article className="km-focus-line km-focus-product">
+          <span aria-hidden="true">P</span>
+          <div>
+            <small>PRODUCTS</small>
+            <b>Choose the exact product—not only the brand.</b>
+            <p>Check model, configuration, application fit, specifications, certification, warranty, availability and local support.</p>
+          </div>
+        </article>
+        <article className="km-focus-line km-focus-logistics">
+          <span aria-hidden="true">L</span>
+          <div>
+            <small>SUPPLY CHAIN &amp; LOGISTICS</small>
+            <b>Price and protect the complete delivery journey.</b>
+            <p>Validate origin, HS code, freight, import tax, customs documents, lead time, storage, last-mile delivery and installation risk.</p>
+          </div>
+        </article>
+      </div>
+
       <div className="km-journey" aria-label="Decision knowledge journey">
         <section className="km-stage">
           <header><span>02</span><div><small>UNDERSTAND</small><h3>Who and why?</h3></div></header>
