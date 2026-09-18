@@ -648,5 +648,79 @@
         "notes": "This is a bid-development method, not permission to influence a project improperly. AI advises; P makes the final decision."
       }
     ]
+  },
+  {
+    "id": "korea-japan-competitor-set-2026-09-18",
+    "sourceUrl": "https://www.fursys.com/",
+    "sourceTitle": "Korea and Japan workplace-furniture competitor update: Fursys, Okamura and Kokuyo",
+    "importedAt": "2026-09-18",
+    "reviewStatus": "reviewed",
+    "summary": "Added official-source company and capability facts for Korea-based Fursys and Japan-based Okamura and Kokuyo. Recorded P's current judgment that these brands form the Korea/Japan competitor set, with model-level comparison and local-delivery verification required for every opportunity.",
+    "records": [
+      {
+        "id": "fursys-korea-workplace-offer-2026-09-18",
+        "knowledgeType": "fact",
+        "domain": "competition",
+        "statement": "Fursys is a Korea-based workplace-furniture company headquartered in Seoul. Its official materials describe office furniture, workspace consulting, space planning, interior and fit-out, relocation, installation, maintenance and overseas furniture-supply support.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.fursys.com/",
+          "https://service.fursys.com/",
+          "https://cdn.fursys.com/fur_upd/sustainabilityManagement/SUS_MANAGE_VER2024_ENG.pdf"
+        ],
+        "notes": "Verify the exact product, local representative, authorization, warranty, stock, lead time and service capability in Vietnam before comparing a bid."
+      },
+      {
+        "id": "okamura-japan-workplace-offer-2026-09-18",
+        "knowledgeType": "fact",
+        "domain": "competition",
+        "statement": "Okamura is a Japan-based manufacturer headquartered in Yokohama. Its Work & Life Creation business provides workplace products and services, including office furniture and office-environment planning for diverse working styles.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.okamura.com/corporate-profile/"
+        ],
+        "notes": "Okamura also operates in other sectors; compare only the workplace scope and exact models relevant to the opportunity."
+      },
+      {
+        "id": "kokuyo-japan-workplace-offer-2026-09-18",
+        "knowledgeType": "fact",
+        "domain": "competition",
+        "statement": "Kokuyo is a Japan-based company headquartered in Osaka whose official business scope includes office-furniture manufacturing, purchasing and sales, together with space design and consultation.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.kokuyo.com/en/about/company-overview/"
+        ],
+        "notes": "Kokuyo also has a stationery business. Verify the workplace product, specification and delivery entity involved in the project."
+      },
+      {
+        "id": "korea-japan-current-competitor-set-2026-09-18",
+        "knowledgeType": "judgment",
+        "domain": "competition",
+        "statement": "In P's current competitive context, track Fursys as the primary Korea-based competitor and Okamura and Kokuyo as the primary Japan-based competitors.",
+        "adviceImpact": "direct",
+        "notes": "User-provided competitor classification. It is not a universal market-share claim; revalidate the active bidders, dealers and specified brands for each project."
+      },
+      {
+        "id": "korea-japan-model-level-comparison-2026-09-18",
+        "knowledgeType": "judgment",
+        "domain": "competition",
+        "statement": "Compare Fursys, Okamura and Kokuyo at exact model and project-scope level—not by country or brand reputation alone—using specification compliance, ergonomics, application fit, verified certifications, warranty, Vietnam support, samples and trials, lead time, total installed cost and after-sales service.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.fursys.com/",
+          "https://www.okamura.com/corporate-profile/",
+          "https://www.kokuyo.com/en/about/company-overview/"
+        ],
+        "notes": "The preferred competitor and response can change by scope, configuration, local representation and commercial terms."
+      },
+      {
+        "id": "korea-japan-bid-response-framework-2026-09-18",
+        "knowledgeType": "judgment",
+        "domain": "strategy",
+        "statement": "When one of these brands appears, identify whether it is named in the specification, proposed by a consultant, incumbent with the client, or introduced by a dealer. Build the response around verified advantages in design fit, multi-brand scope, local execution, supply-chain control, installation, service and risk-adjusted commercial value.",
+        "adviceImpact": "direct",
+        "notes": "Do not make unsupported equivalence or origin-based quality claims. Use compliant submittals and transparent evidence; AI advises and P makes the final decision."
+      }
+    ]
   }
 ]
