@@ -527,5 +527,126 @@
         "notes": "Do not hide logistics contingency inside product cost. Keep assumptions visible and refresh them when the quote validity or shipping plan changes."
       }
     ]
+  },
+  {
+    "id": "project-advisers-qs-workplace-design-2026-09-18",
+    "sourceUrl": "https://www.rics.org/surveyor-careers/surveying/what-surveyors-do/what-is-a-quantity-surveyor",
+    "sourceTitle": "CBRE, JLL, Cushman & Wakefield, QS, Gensler and M Moser project-influence review",
+    "importedAt": "2026-09-18",
+    "reviewStatus": "reviewed",
+    "summary": "Added an official-source map of how global real-estate and project advisers, quantity surveyors, workplace designers and integrated design-delivery firms can influence workplace-furniture decisions. Company service facts remain separate from opportunity-specific bid judgments, and actual authority must be verified on every project.",
+    "records": [
+      {
+        "id": "cbre-workplace-project-adviser-role-2026-09-18",
+        "knowledgeType": "fact",
+        "domain": "relationship",
+        "statement": "CBRE's project-management materials describe workplace-transformation services that can include project and program management, furniture advisory, relocation management, cost management and design coordination from concept through completion.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://mediaassets.cbre.com/-/media/project/cbre/dotcom/americas/canada-emerald/services/design-and-build/project-and-program-management/2024-project-management-canada.pdf?rev=05ce0d5d9a054759a02a16269933b54e",
+          "https://www.cbre.com/about-us/technology"
+        ],
+        "notes": "These are CBRE service capabilities, not proof that CBRE holds every role on a particular project. Confirm the appointment, geography, deliverables and decision rights."
+      },
+      {
+        "id": "jll-workplace-strategy-design-role-2026-09-18",
+        "knowledgeType": "fact",
+        "domain": "relationship",
+        "statement": "JLL's design services span workplace strategy and design, furniture, environmental branding, architecture and project delivery, allowing its project role to affect both the workplace brief and how solutions are evaluated.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.jll.com/en-us/services/design",
+          "https://www.jll.com/en-us/services/strategy-design"
+        ],
+        "notes": "Verify the exact JLL team, contracted scope and authority on the opportunity; a corporate service portfolio does not establish project-level control."
+      },
+      {
+        "id": "cushman-wakefield-project-development-role-2026-09-18",
+        "knowledgeType": "fact",
+        "domain": "relationship",
+        "statement": "Cushman & Wakefield's Project & Development Services include project and program management, project controls, strategic planning, design coordination, construction management, FF&E management, and cost and risk management.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.cushmanwakefield.com/en/united-states/services/project-development-services",
+          "https://www.cushmanwakefield.com/en/united-kingdom/services/project-development/design-and-build",
+          "https://www.cushmanwakefield.com/en/germany/services/project-development-services/workplace-strategy"
+        ],
+        "notes": "The active services and authority depend on the appointment, country and project phase."
+      },
+      {
+        "id": "quantity-surveyor-cost-procurement-role-2026-09-18",
+        "knowledgeType": "fact",
+        "domain": "commercial",
+        "statement": "A quantity surveyor can advise from early cost analysis through lifecycle costing, cost planning, procurement, tendering, bills of quantities, contract administration, value engineering, variations, financial reporting and final account.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.rics.org/surveyor-careers/surveying/what-surveyors-do/what-is-a-quantity-surveyor",
+          "https://www.rics.org/profession-standards/rics-standards-and-guidance/conduct-competence/client-relationships-and-handling-data/crhd-appendices"
+        ],
+        "notes": "QS is a professional role or service category, not one named company. Confirm whether the QS represents the client, contractor or another party because interests and responsibilities differ."
+      },
+      {
+        "id": "gensler-workplace-strategy-design-role-2026-09-18",
+        "knowledgeType": "fact",
+        "domain": "relationship",
+        "statement": "Gensler describes a research- and data-informed strategy practice in which workplace strategy can align physical space, technology, operations and human resources, supported by interior design, change management and strategic planning.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.gensler.com/expertise/strategy",
+          "https://www.gensler.com/services"
+        ],
+        "notes": "Confirm whether Gensler is strategist, designer, architect, specifier or another role on the actual project."
+      },
+      {
+        "id": "m-moser-integrated-workplace-role-2026-09-18",
+        "knowledgeType": "fact",
+        "domain": "relationship",
+        "statement": "M Moser Associates presents an integrated workplace offer covering strategy, design, engineering and delivery, including employee and leadership engagement, change management, preconstruction, construction management and design-build services.",
+        "adviceImpact": "contextual",
+        "evidence": [
+          "https://www.mmoser.com/services/workplace-strategy/",
+          "https://www.mmoser.com/services/"
+        ],
+        "notes": "M Moser's project influence can span brief, specification and delivery, but the actual scope and commercial structure must be checked for each opportunity."
+      },
+      {
+        "id": "project-adviser-role-separation-2026-09-18",
+        "knowledgeType": "judgment",
+        "domain": "strategy",
+        "statement": "Do not treat CBRE, JLL, Cushman & Wakefield, a QS, Gensler and M Moser as interchangeable. Map the active role as client adviser or project manager, cost manager or QS, design consultant or specifier, or integrated design-delivery partner before building the win strategy.",
+        "adviceImpact": "direct",
+        "evidence": [
+          "https://www.cushmanwakefield.com/en/united-states/services/project-development-services",
+          "https://www.rics.org/surveyor-careers/surveying/what-surveyors-do/what-is-a-quantity-surveyor",
+          "https://www.gensler.com/expertise/strategy",
+          "https://www.mmoser.com/services/"
+        ],
+        "notes": "One firm may hold several roles, and the role may change between project phases."
+      },
+      {
+        "id": "project-adviser-decision-rights-map-2026-09-18",
+        "knowledgeType": "judgment",
+        "domain": "relationship",
+        "statement": "For every active adviser, record who creates the brief, controls budget, manages the programme, writes or protects specifications, prequalifies vendors, normalizes tenders, recommends an award, approves substitutions, accepts installation and can veto. Separate formal authority from informal influence.",
+        "adviceImpact": "direct",
+        "notes": "Titles and brand names do not prove authority. Validate the responsibility matrix, procurement documents and stakeholder interviews."
+      },
+      {
+        "id": "project-adviser-evidence-plan-2026-09-18",
+        "knowledgeType": "judgment",
+        "domain": "competition",
+        "statement": "Match bid evidence to the adviser: provide compliant model-level submittals, samples and trials for designers and users; transparent scope, exclusions, lead time and delivery controls for project managers; and comparable quantities, total installed or landed cost, lifecycle value, risk allowances and variation rules for the QS.",
+        "adviceImpact": "direct",
+        "notes": "Use verifiable evidence and approved communication channels. Never bypass client procurement, hide exclusions or manipulate a consultant."
+      },
+      {
+        "id": "project-adviser-engagement-guardrail-2026-09-18",
+        "knowledgeType": "judgment",
+        "domain": "strategy",
+        "statement": "Engage advisers early by asking what success criteria, design intent, cost limits, risks and evidence could change their recommendation. Preserve design intent and client value while making alternatives easy to compare, and revalidate every assumption when scope, consultant or procurement route changes.",
+        "adviceImpact": "direct",
+        "notes": "This is a bid-development method, not permission to influence a project improperly. AI advises; P makes the final decision."
+      }
+    ]
   }
 ]
