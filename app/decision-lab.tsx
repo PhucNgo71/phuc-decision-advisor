@@ -37,6 +37,8 @@ export default function DecisionLab() {
   const [customer, setCustomer] = useState('Example Workplace Client');
   const [origin, setOrigin] = useState('US-origin clients');
   const [objective, setObjective] = useState<WinObjective>('must_win');
+  const [question, setQuestion] = useState('');
+  const [submittedQuestion, setSubmittedQuestion] = useState('');
   const [scopeLines, setScopeLines] = useState<ScopeLine[]>([
     { id: 1, scope: 'Furniture', sellingPrice: 800000, cost: 600000, risk: 'medium' },
     { id: 2, scope: 'Ergonomics', sellingPrice: 200000, cost: 150000, risk: 'low' },
@@ -232,6 +234,118 @@ export default function DecisionLab() {
           and blended margin update immediately.
         </p>
       </div>
+      <div className="question-feedback-workspace">
+        <form
+          className="question-entry-panel"
+          onSubmit={(event) => {
+            event.preventDefault();
+            const nextQuestion = question.trim();
+            if (nextQuestion) setSubmittedQuestion(nextQuestion);
+          }}
+        >
+          <div className="workspace-panel-head">
+            <span>1</span>
+            <div>
+              <b>Enter your question</b>
+              <small>Describe the decision, concern or opportunity.</small>
+            </div>
+          </div>
+          <label htmlFor="decision-question">What would you like advice about?</label>
+          <textarea
+            id="decision-question"
+            rows={6}
+            value={question}
+            onChange={(event) => setQuestion(event.target.value)}
+            placeholder="Example: How can we win this project without dropping below our margin floor?"
+          />
+          <div className="question-prompts" aria-label="Question examples">
+            {[
+              'How can we win this project?',
+              'Is the margin safe?',
+              'Which scope needs attention?',
+            ].map((prompt) => (
+              <button type="button" key={prompt} onClick={() => setQuestion(prompt)}>
+                {prompt}
+              </button>
+            ))}
+          </div>
+          <button
+            className="question-submit"
+            type="submit"
+            disabled={!question.trim()}
+          >
+            Get decision feedback <span aria-hidden="true">→</span>
+          </button>
+        </form>
+
+        <div className="workspace-flow" aria-hidden="true">→</div>
+
+        <section className="feedback-panel" aria-live="polite">
+          <div className="workspace-panel-head">
+            <span>2</span>
+            <div>
+              <b>Decision feedback</b>
+              <small>Guidance based on the project information below.</small>
+            </div>
+          </div>
+          {submittedQuestion ? (
+            <div className="feedback-answer">
+              <div className="feedback-question">
+                <small>Question received</small>
+                <strong>{submittedQuestion}</strong>
+              </div>
+              <p className="feedback-summary">
+                For <b>{customer || 'this opportunity'}</b>, start with the{' '}
+                <b>{objectiveLabels[objective]}</b> objective. The current{' '}
+                {result.scopes.length}-scope structure estimates a{' '}
+                <b>{percent(result.blendedMargin)}</b> blended margin after risk.
+              </p>
+              <div className="feedback-signals">
+                <article>
+                  <small>Commercial signal</small>
+                  <b>
+                    {result.belowFloor
+                      ? 'Below the 12% hard floor'
+                      : result.belowTarget
+                        ? 'Safe floor, target not met'
+                        : 'Target margin met'}
+                  </b>
+                </article>
+                <article>
+                  <small>Risk signal</small>
+                  <b>
+                    {result.highRiskScopes.length
+                      ? result.highRiskScopes.length + ' high-risk scope(s)'
+                      : 'No high-risk scopes'}
+                  </b>
+                </article>
+                <article>
+                  <small>Confidence</small>
+                  <b>{result.confidence}%</b>
+                </article>
+              </div>
+              <div className="feedback-direction">
+                <small>Recommended direction</small>
+                <p>{result.direction}</p>
+              </div>
+              <p className="feedback-caveat">
+                Feedback may change with supplier quotes, lead time, decision-maker
+                influence and validated customer priorities. AI advises; P decides.
+              </p>
+            </div>
+          ) : (
+            <div className="feedback-empty">
+              <span aria-hidden="true">✦</span>
+              <b>Your feedback will appear here</b>
+              <p>
+                Enter a question on the left, then select “Get decision feedback”.
+                Complete the project fields below for a stronger response.
+              </p>
+            </div>
+          )}
+        </section>
+      </div>
+
       <div className="project-context">
         <label>
           Customer
