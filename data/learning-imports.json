@@ -722,5 +722,39 @@
         "notes": "Do not make unsupported equivalence or origin-based quality claims. Use compliant submittals and transparent evidence; AI advises and P makes the final decision."
       }
     ]
+  },
+  {
+    "id": "product-costing-process-2026-09-26",
+    "sourceUrl": "https://phuc-decision-advisor.vercel.app/#product-cost-calculator",
+    "sourceTitle": "P product-costing process and input preference",
+    "importedAt": "2026-09-26",
+    "reviewStatus": "reviewed",
+    "summary": "Recorded P's preferred product-costing workflow: model-level identity, volume, international and inland logistics, import tax, delivery or installation by pcs or sqm, complete landed cost, target selling price and profit. Also recorded the requested clean numeric-entry behavior.",
+    "records": [
+      {
+        "id": "product-costing-input-structure-2026-09-26",
+        "knowledgeType": "current_preference",
+        "domain": "commercial",
+        "statement": "For product costing, capture product description, product code, quantity or area, base product cost, CBM, international logistics cost per CBM, inland logistics cost per CBM, import tax, and delivery or installation cost per pcs or sqm before calculating the total landed cost.",
+        "adviceImpact": "direct",
+        "notes": "User-defined costing workflow. Quantity or area and base product cost are necessary calculation inputs added to make the requested process operational."
+      },
+      {
+        "id": "gross-margin-selling-price-formula-2026-09-26",
+        "knowledgeType": "fact",
+        "domain": "commercial",
+        "statement": "When the target is gross margin on selling price, target selling price equals total cost divided by one minus the target margin rate, and gross profit equals selling price minus total cost.",
+        "adviceImpact": "direct",
+        "notes": "Gross margin and markup are different. If a quotation uses markup on cost instead, use the markup formula explicitly rather than mixing the two definitions."
+      },
+      {
+        "id": "product-costing-clean-number-entry-2026-09-26",
+        "knowledgeType": "current_preference",
+        "domain": "product",
+        "statement": "Product-costing numeric inputs should start blank and normalize unwanted leading zeros so entries such as 0500, 010 and 020 display as 500, 10 and 20.",
+        "adviceImpact": "none",
+        "notes": "Interface preference only; it does not change the underlying calculation."
+      }
+    ]
   }
 ]
