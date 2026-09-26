@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import commercialRules from '../data/commercial-rules.json';
 import learningImports from '../data/learning-imports.json';
 import portfolio from '../data/portfolio.json';
+import ProductCostCalculator from './product-cost-calculator';
 
 type WinObjective = 'must_win' | 'target_scope' | 'defensive' | 'partial_win' | 'profit_led' | 'reference_led';
 type RiskLevel = 'low' | 'medium' | 'high';
@@ -422,6 +423,8 @@ export default function DecisionLab() {
           )}
         </section>
       </div>
+
+      <ProductCostCalculator />
 
       <details className="project-calculator" id="project-calculator">
         <summary>

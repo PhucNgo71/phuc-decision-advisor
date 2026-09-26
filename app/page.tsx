@@ -20,7 +20,7 @@ export default function Home() {
     <main className="page" id="top">
       <header className="topbar">
         <div className="brand"><img src="/phuc-sealion.png" alt="P mascot"/><div><b>P</b><span>Decision Advisor</span></div></div>
-        <nav><a className="active" href="#top">Home</a><a href="#decision-lab">Ask Advisor</a><a href="#project-calculator">Project Calculator</a><a href="#knowledge-map">Knowledge Map</a><a href="#knowledge">Updates</a></nav>
+        <nav><a className="active" href="#top">Home</a><a href="#decision-lab">Ask Advisor</a><a href="#product-cost-calculator">Product Costing</a><a href="#project-calculator">Project Calculator</a><a href="#knowledge-map">Knowledge Map</a><a href="#knowledge">Updates</a></nav>
         <div className="utility-actions">
           <div className="astra-badge" title="ASTA advisor — GPT-6 Astra">
             <span aria-hidden="true">✦</span>

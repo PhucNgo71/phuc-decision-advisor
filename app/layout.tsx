@@ -1,6 +1,7 @@
 import './globals.css';
 import './decision-lab.css';
 import './decision-lab-v2.css';
+import './product-cost-calculator.css';
 import './knowledge-map.css';
 import './knowledge-pulse.css';
 
