@@ -33,6 +33,33 @@ const scopeOptions = Array.from(new Set(portfolio.rules.map((rule) => rule.scope
 const money = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
 const percent = (value: number) => (value * 100).toFixed(1) + '%';
 
+const knowledgeTopics = [
+  {
+    id: 'logistics',
+    title: 'Logistics and supply-chain guidance',
+    triggers: ['logistic', 'logistics', 'shipping', 'shipment', 'supply chain', 'import', 'customs', 'freight', 'tax', 'landed cost', 'delivery'],
+    terms: ['logistic', 'shipping', 'supply chain', 'import', 'customs', 'freight', 'tariff', 'tax', 'origin', 'landed cost', 'incoterm', 'lead time', 'delivery', 'document'],
+  },
+  {
+    id: 'competition',
+    title: 'Competitor guidance',
+    triggers: ['competitor', 'competition', 'versus', 'compare', 'brand'],
+    terms: ['competitor', 'competition', 'brand', 'compare', 'bid', 'model', 'portfolio', 'equivalence'],
+  },
+  {
+    id: 'stakeholders',
+    title: 'Stakeholder and influence guidance',
+    triggers: ['stakeholder', 'decision maker', 'procurement', 'designer', 'consultant', 'qs', 'quantity surveyor'],
+    terms: ['stakeholder', 'decision maker', 'procurement', 'designer', 'consultant', 'quantity surveyor', 'influence', 'authority', 'specifier'],
+  },
+  {
+    id: 'products',
+    title: 'Product and portfolio guidance',
+    triggers: ['product', 'chair', 'furniture', 'seating', 'flooring', 'pod'],
+    terms: ['product', 'chair', 'furniture', 'seating', 'flooring', 'pod', 'ergonomic', 'warranty', 'certification'],
+  },
+];
+
 export default function DecisionLab() {
   const [customer, setCustomer] = useState('Example Workplace Client');
   const [origin, setOrigin] = useState('US-origin clients');
@@ -222,6 +249,29 @@ export default function DecisionLab() {
     .flatMap((item) => item.records)
     .filter((record) => record.knowledgeType !== 'temporary_context');
 
+  const normalizedQuestion = submittedQuestion.toLowerCase();
+  const activeKnowledgeTopic = knowledgeTopics.find((topic) =>
+    topic.triggers.some((trigger) => normalizedQuestion.includes(trigger)),
+  );
+  const relatedLearnings = activeKnowledgeTopic
+    ? durableLearnings
+        .map((record) => {
+          const searchable = (record.id + ' ' + record.domain + ' ' + record.statement).toLowerCase();
+          const score = activeKnowledgeTopic.terms.reduce(
+            (total, term) => total + (searchable.includes(term) ? 1 : 0),
+            0,
+          );
+          return { record, score };
+        })
+        .filter((item) => item.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 4)
+        .map((item) => item.record)
+    : [];
+  const showKnowledgeAnswer = Boolean(
+    activeKnowledgeTopic && relatedLearnings.length,
+  );
+
   return (
     <section className="decision-lab" id="decision-lab">
       <div className="section-heading">
@@ -294,44 +344,71 @@ export default function DecisionLab() {
                 <small>Question received</small>
                 <strong>{submittedQuestion}</strong>
               </div>
-              <p className="feedback-summary">
-                For <b>{customer || 'this opportunity'}</b>, start with the{' '}
-                <b>{objectiveLabels[objective]}</b> objective. The current{' '}
-                {result.scopes.length}-scope structure estimates a{' '}
-                <b>{percent(result.blendedMargin)}</b> blended margin after risk.
-              </p>
-              <div className="feedback-signals">
-                <article>
-                  <small>Commercial signal</small>
-                  <b>
-                    {result.belowFloor
-                      ? 'Below the 12% hard floor'
-                      : result.belowTarget
-                        ? 'Safe floor, target not met'
-                        : 'Target margin met'}
-                  </b>
-                </article>
-                <article>
-                  <small>Risk signal</small>
-                  <b>
-                    {result.highRiskScopes.length
-                      ? result.highRiskScopes.length + ' high-risk scope(s)'
-                      : 'No high-risk scopes'}
-                  </b>
-                </article>
-                <article>
-                  <small>Confidence</small>
-                  <b>{result.confidence}%</b>
-                </article>
-              </div>
-              <div className="feedback-direction">
-                <small>Recommended direction</small>
-                <p>{result.direction}</p>
-              </div>
-              <p className="feedback-caveat">
-                Feedback may change with supplier quotes, lead time, decision-maker
-                influence and validated customer priorities. AI advises; P decides.
-              </p>
+              {showKnowledgeAnswer ? (
+                <>
+                  <div className="knowledge-answer-head">
+                    <small>Reviewed knowledge answer</small>
+                    <b>{activeKnowledgeTopic?.title}</b>
+                    <p>
+                      These are the most relevant reviewed points for your question.
+                    </p>
+                  </div>
+                  <div className="knowledge-answer-list">
+                    {relatedLearnings.map((record) => (
+                      <article key={record.id}>
+                        <span>{record.knowledgeType.replace(/_/g, ' ')}</span>
+                        <p>{record.statement}</p>
+                      </article>
+                    ))}
+                  </div>
+                  <p className="feedback-caveat">
+                    Apply this guidance to the exact route, HS code, supplier,
+                    quotation and project conditions. AI advises; P decides.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p className="feedback-summary">
+                    For <b>{customer || 'this opportunity'}</b>, start with the{' '}
+                    <b>{objectiveLabels[objective]}</b> objective. The current{' '}
+                    {result.scopes.length}-scope structure estimates a{' '}
+                    <b>{percent(result.blendedMargin)}</b> blended margin after risk.
+                  </p>
+                  <div className="feedback-signals">
+                    <article>
+                      <small>Commercial signal</small>
+                      <b>
+                        {result.belowFloor
+                          ? 'Below the 12% hard floor'
+                          : result.belowTarget
+                            ? 'Safe floor, target not met'
+                            : 'Target margin met'}
+                      </b>
+                    </article>
+                    <article>
+                      <small>Risk signal</small>
+                      <b>
+                        {result.highRiskScopes.length
+                          ? result.highRiskScopes.length + ' high-risk scope(s)'
+                          : 'No high-risk scopes'}
+                      </b>
+                    </article>
+                    <article>
+                      <small>Confidence</small>
+                      <b>{result.confidence}%</b>
+                    </article>
+                  </div>
+                  <div className="feedback-direction">
+                    <small>Recommended direction</small>
+                    <p>{result.direction}</p>
+                  </div>
+                  <p className="feedback-caveat">
+                    Feedback may change with supplier quotes, lead time,
+                    decision-maker influence and validated customer priorities.
+                    AI advises; P decides.
+                  </p>
+                </>
+              )}
             </div>
           ) : (
             <div className="feedback-empty">
