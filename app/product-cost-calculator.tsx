@@ -4,33 +4,36 @@ import { useMemo, useState } from 'react';
 import commercialRules from '../data/commercial-rules.json';
 
 type CostUnit = 'pcs' | 'sqm';
+type OptionalNumber = number | '';
 type ProductCostLine = {
   id: number;
   description: string;
   code: string;
   quantity: number;
   unit: CostUnit;
-  unitCost: number;
-  cbmPerUnit: number;
-  logisticsPerCbm: number;
-  inlandPerCbm: number;
-  importTaxRate: number;
-  installPerUnit: number;
+  unitCost: OptionalNumber;
+  cbmPerUnit: OptionalNumber;
+  logisticsPerCbm: OptionalNumber;
+  inlandPerCbm: OptionalNumber;
+  importTaxRate: OptionalNumber;
+  installPerUnit: OptionalNumber;
 };
 
 const money = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+const readOptionalNumber = (value: string): OptionalNumber =>
+  value === '' ? '' : Number(value);
 const newLine = (id: number): ProductCostLine => ({
   id,
   description: '',
   code: '',
   quantity: 1,
   unit: 'pcs',
-  unitCost: 0,
-  cbmPerUnit: 0,
-  logisticsPerCbm: 0,
-  inlandPerCbm: 0,
-  importTaxRate: 0,
-  installPerUnit: 0,
+  unitCost: '',
+  cbmPerUnit: '',
+  logisticsPerCbm: '',
+  inlandPerCbm: '',
+  importTaxRate: '',
+  installPerUnit: '',
 });
 
 export default function ProductCostCalculator() {
@@ -64,13 +67,20 @@ export default function ProductCostCalculator() {
   const result = useMemo(() => {
     const marginRate = Math.min(Math.max(targetMargin / 100, 0), 0.95);
     const products = lines.map((line) => {
-      const productCost = line.quantity * line.unitCost;
-      const totalCbm = line.quantity * line.cbmPerUnit;
-      const logisticsCost = totalCbm * line.logisticsPerCbm;
-      const inlandCost = totalCbm * line.inlandPerCbm;
+      const quantity = Number(line.quantity) || 0;
+      const unitCost = Number(line.unitCost) || 0;
+      const cbmPerUnit = Number(line.cbmPerUnit) || 0;
+      const logisticsPerCbm = Number(line.logisticsPerCbm) || 0;
+      const inlandPerCbm = Number(line.inlandPerCbm) || 0;
+      const importTaxRate = Number(line.importTaxRate) || 0;
+      const installPerUnit = Number(line.installPerUnit) || 0;
+      const productCost = quantity * unitCost;
+      const totalCbm = quantity * cbmPerUnit;
+      const logisticsCost = totalCbm * logisticsPerCbm;
+      const inlandCost = totalCbm * inlandPerCbm;
       const customsPlanningBase = productCost + logisticsCost;
-      const importTax = customsPlanningBase * (line.importTaxRate / 100);
-      const installationCost = line.quantity * line.installPerUnit;
+      const importTax = customsPlanningBase * (importTaxRate / 100);
+      const installationCost = quantity * installPerUnit;
       const totalCost =
         productCost +
         logisticsCost +
@@ -214,7 +224,7 @@ export default function ProductCostCalculator() {
                     min="0"
                     value={line.unitCost}
                     onChange={(event) =>
-                      updateLine(line.id, 'unitCost', Number(event.target.value))
+                      updateLine(line.id, 'unitCost', readOptionalNumber(event.target.value))
                     }
                   />
                 </label>
@@ -226,7 +236,7 @@ export default function ProductCostCalculator() {
                     step="0.001"
                     value={line.cbmPerUnit}
                     onChange={(event) =>
-                      updateLine(line.id, 'cbmPerUnit', Number(event.target.value))
+                      updateLine(line.id, 'cbmPerUnit', readOptionalNumber(event.target.value))
                     }
                   />
                 </label>
@@ -240,7 +250,7 @@ export default function ProductCostCalculator() {
                       updateLine(
                         line.id,
                         'logisticsPerCbm',
-                        Number(event.target.value),
+                        readOptionalNumber(event.target.value),
                       )
                     }
                   />
@@ -252,7 +262,7 @@ export default function ProductCostCalculator() {
                     min="0"
                     value={line.inlandPerCbm}
                     onChange={(event) =>
-                      updateLine(line.id, 'inlandPerCbm', Number(event.target.value))
+                      updateLine(line.id, 'inlandPerCbm', readOptionalNumber(event.target.value))
                     }
                   />
                 </label>
@@ -268,7 +278,7 @@ export default function ProductCostCalculator() {
                         updateLine(
                           line.id,
                           'importTaxRate',
-                          Number(event.target.value),
+                          readOptionalNumber(event.target.value),
                         )
                       }
                     />
@@ -285,7 +295,7 @@ export default function ProductCostCalculator() {
                       updateLine(
                         line.id,
                         'installPerUnit',
-                        Number(event.target.value),
+                        readOptionalNumber(event.target.value),
                       )
                     }
                   />
