@@ -276,12 +276,12 @@ export default function DecisionLab() {
     <section className="decision-lab" id="decision-lab">
       <div className="section-heading">
         <div>
-          <span>LIVE MULTI-SCOPE DECISION LAB</span>
-          <h2>Build the full project scope</h2>
+          <span>ASK P DECISION ADVISOR</span>
+          <h2>Start with one clear question</h2>
         </div>
         <p>
-          Add as many scope packages as needed. Price, cost, contingency, risk
-          and blended margin update immediately.
+          Ask about logistics, products, competitors, stakeholders or a live
+          opportunity. Open the project calculator only when you need it.
         </p>
       </div>
       <div className="question-feedback-workspace">
@@ -297,7 +297,7 @@ export default function DecisionLab() {
             <span>1</span>
             <div>
               <b>Enter your question</b>
-              <small>Describe the decision, concern or opportunity.</small>
+              <small>Use normal language. No project form is required.</small>
             </div>
           </div>
           <label htmlFor="decision-question">What would you like advice about?</label>
@@ -310,9 +310,9 @@ export default function DecisionLab() {
           />
           <div className="question-prompts" aria-label="Question examples">
             {[
-              'How can we win this project?',
-              'Is the margin safe?',
-              'Which scope needs attention?',
+              'What should I check for Vietnam import logistics?',
+              'How do we compare a competitor?',
+              'Is this project margin safe?',
             ].map((prompt) => (
               <button type="button" key={prompt} onClick={() => setQuestion(prompt)}>
                 {prompt}
@@ -335,7 +335,7 @@ export default function DecisionLab() {
             <span>2</span>
             <div>
               <b>Decision feedback</b>
-              <small>Guidance based on the project information below.</small>
+              <small>An answer matched to reviewed knowledge or project data.</small>
             </div>
           </div>
           {submittedQuestion ? (
@@ -416,13 +416,23 @@ export default function DecisionLab() {
               <b>Your feedback will appear here</b>
               <p>
                 Enter a question on the left, then select “Get decision feedback”.
-                Complete the project fields below for a stronger response.
+                Use the optional calculator only for live project pricing.
               </p>
             </div>
           )}
         </section>
       </div>
 
+      <details className="project-calculator" id="project-calculator">
+        <summary>
+          <div>
+            <span>Optional tool</span>
+            <b>Open the project calculator</b>
+            <small>Scope, cost, contingency, risk and margin analysis</small>
+          </div>
+          <i aria-hidden="true">+</i>
+        </summary>
+        <div className="project-calculator-body">
       <div className="project-context">
         <label>
           Customer
@@ -695,6 +705,8 @@ export default function DecisionLab() {
           </div>
         </div>
       </div>
+        </div>
+      </details>
     </section>
   );
 }
