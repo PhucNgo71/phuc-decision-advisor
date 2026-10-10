@@ -1,4 +1,4 @@
-import { retrieveKnowledge, type RagResult } from '../rag';
+import { retrieveKnowledge, type RagResult } from '../rag/index.ts';
 
 export interface LandedCostInput {
   currency?: string;

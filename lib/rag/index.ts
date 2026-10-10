@@ -1,8 +1,8 @@
-import commercialRules from '../../data/commercial-rules.json';
-import portfolio from '../../data/portfolio.json';
-import practicalExperience from '../../data/practical-experience.json';
-import { learningImports } from '../learnings';
-import type { KnowledgeType } from '../types';
+import commercialRules from '../../data/commercial-rules.json' with { type: 'json' };
+import portfolio from '../../data/portfolio.json' with { type: 'json' };
+import practicalExperience from '../../data/practical-experience.json' with { type: 'json' };
+import { learningImports } from '../learnings.ts';
+import type { KnowledgeType } from '../types.ts';
 
 export type RagSource = 'learning_import' | 'commercial_rule' | 'portfolio' | 'practical_experience';
 

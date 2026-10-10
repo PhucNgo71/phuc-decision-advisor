@@ -24,3 +24,13 @@ test('ties resolve by lower price and then vendor name', () => {
   const rows = compareBids(same, demoState.vendors, project.package);
   assert.deepEqual(rows.map(row => row.vendorName), ['Greenline Office', 'Northstar Workspace']);
 });
+
+test('independent evaluator scores replace vendor-supplied technical values', () => {
+  const project = demoState.projects[0]; const bid = demoState.bids[0];
+  const evaluations = [
+    { id: 'e1', projectId: project.id, bidId: bid.id, vendorId: bid.vendorId, evaluatorId: 'one', technicalScore: 70, complianceScore: 80, comment: 'First review', submittedAt: '2026-09-08T00:00:00Z', status: 'submitted' as const, revision: 1 },
+    { id: 'e2', projectId: project.id, bidId: bid.id, vendorId: bid.vendorId, evaluatorId: 'two', technicalScore: 90, complianceScore: 100, comment: 'Second review', submittedAt: '2026-09-08T00:00:00Z', status: 'submitted' as const, revision: 1 },
+  ];
+  const row = compareBids([bid], demoState.vendors, project.package, evaluations)[0];
+  assert.equal(row.technicalScore, 80); assert.equal(row.complianceScore, 90);
+});

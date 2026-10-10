@@ -18,3 +18,6 @@ out/
 .DS_Store
 Thumbs.db
 *.tsbuildinfo
+
+# Local server-side procurement database
+.data/

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { calculateVietnamLandedCost } from './index';
+import { calculateVietnamLandedCost } from './index.ts';
 
 test('calculates deterministic landed cost from supplied rates', () => {
   const result = calculateVietnamLandedCost({

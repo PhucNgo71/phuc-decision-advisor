@@ -1,6 +1,7 @@
 export type ProjectStatus = 'draft' | 'inviting' | 'bidding' | 'closed';
 export type InvitationStatus = 'invited' | 'accepted' | 'declined';
 export type BidStatus = 'submitted' | 'locked';
+export type ProcurementRole = 'Owner Admin' | 'Procurement' | 'Evaluator' | 'Vendor' | 'Auditor / Compliance';
 
 export interface ProcurementPackage {
   id: string;
@@ -43,15 +44,25 @@ export interface Bid {
   complianceScore: number; scopeExclusions: string; documentsComplete: boolean;
   status: BidStatus; lockedAt: string;
 }
+export interface Evaluation {
+  id: string; projectId: string; bidId: string; vendorId: string; evaluatorId: string;
+  technicalScore: number; complianceScore: number; comment: string;
+  submittedAt: string; status: 'submitted'; revision: number;
+}
 export interface AuditEvent {
   id: string; projectId: string; actorId: string; actorRole: string; eventType: string;
   entityType: string; entityId: string; beforeSnapshot: unknown; afterSnapshot: unknown;
   reason?: string; timestamp: string;
 }
 export interface AwardOverride { vendorId: string; reason: string; createdAt: string }
+export interface RiskFlag {
+  code: string; severity: 'low' | 'medium' | 'high'; title: string; explanation: string;
+  evidenceEventIds: string[]; recommendedReview: string;
+}
 export interface ProcurementState {
   projects: ProcurementProject[]; vendors: Vendor[]; invitations: Invitation[];
-  bids: Bid[]; audit: AuditEvent[]; awardOverrides: Record<string, AwardOverride>;
+  bids: Bid[]; evaluations: Evaluation[]; audit: AuditEvent[];
+  awardOverrides: Record<string, AwardOverride>;
 }
 export interface ComparisonRow {
   rank: number; vendorId: string; vendorName: string; totalPrice: number; normalizedPrice: number;

@@ -4,7 +4,7 @@ const createdAt = '2026-09-07T09:00:00.000Z';
 const project: ProcurementProject = {
   id: 'demo-project', name: 'HCMC Workplace Renewal', owner: 'Demo Owner', location: 'Ho Chi Minh City',
   currency: 'VND', estimatedBudget: 900000000, procurementMethod: 'sealed_bid',
-  bidOpenAt: '2026-09-07T09:00', bidCloseAt: '2026-09-14T17:00', status: 'bidding',
+  bidOpenAt: '2026-01-01T09:00', bidCloseAt: '2099-12-31T17:00', status: 'bidding',
   createdBy: 'owner-admin', createdAt,
   package: { id: 'demo-package', name: 'Workstations', description: 'Supply and install ergonomic workstations',
     quantity: 100, unit: 'sets', technicalRequirements: 'Height-adjustable desks with cable management',
@@ -29,6 +29,7 @@ export const demoState: ProcurementState = {
   projects: [project], vendors,
   invitations: vendors.map((vendor, index) => ({ id: `invite-${index + 1}`, projectId: project.id, vendorId: vendor.id, invitedAt: createdAt, acceptedAt: createdAt, status: 'accepted', invitationVersion: 1 })),
   bids,
+  evaluations: [],
   audit: [audit('project.created', 'project', project.id, project, 1), ...vendors.map((vendor, index) => audit('vendor.invited', 'invitation', `invite-${index + 1}`, vendor, index + 2)), ...bids.map((bid, index) => audit('bid.submitted_and_locked', 'bid', bid.id, { status: bid.status, lockedAt: bid.lockedAt }, index + 5))],
   awardOverrides: {},
 };

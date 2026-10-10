@@ -1,4 +1,4 @@
-import imports from '../data/learning-imports.json';
+import imports from '../data/learning-imports.json' with { type: 'json' };
 import type { LearningImport } from './types';
 
 export const learningImports = imports as LearningImport[];
