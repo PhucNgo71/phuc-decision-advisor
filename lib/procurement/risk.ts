@@ -1,4 +1,4 @@
-import { compareBids } from './engine';
+import { compareBids } from './engine.ts';
 import type { AuditEvent, ProcurementState } from './types';
 
 export type RiskCode = 'R01' | 'R02' | 'R03' | 'R04' | 'R05' | 'R06' | 'R07' | 'R08';
