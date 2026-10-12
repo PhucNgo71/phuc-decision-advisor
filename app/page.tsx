@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main className="page" id="top">
       <header className="topbar">
-        <div className="brand"><img src="/phuc-sealion.png" alt="P mascot"/><div><b>P</b><span>Decision Advisor</span></div></div>
+        <div className="brand"><img src="/phuc-sealion.png" alt="Ergoer Agent mascot"/><div><b>Ergoer</b><span>Agent</span></div></div>
         <nav><a className="active" href="#top">Home</a><a href="#decision-lab">Ask Advisor</a><a href="#product-cost-calculator">Product Costing</a><a href="#project-calculator">Project Calculator</a><a href="#knowledge-map">Knowledge Map</a><a href="#knowledge">Updates</a></nav>
         <div className="utility-actions">
           <div className="astra-badge" title="ASTA advisor — GPT-6 Astra">
@@ -58,7 +58,7 @@ export default function Home() {
 
       <a
         className="whatsapp-help"
-        href="https://wa.me/84903017957?text=Hello%20P%2C%20I%20need%20urgent%20help%20because%20I%20cannot%20find%20the%20correct%20advice%20on%20P%20Decision%20Advisor."
+        href="https://wa.me/84903017957?text=Hello%20P%2C%20I%20need%20urgent%20help%20because%20I%20cannot%20find%20the%20correct%20advice%20on%20Ergoer%20Agent."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contact P on WhatsApp for urgent help"
