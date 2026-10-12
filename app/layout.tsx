@@ -6,7 +6,7 @@ import './knowledge-map.css';
 import './knowledge-pulse.css';
 
 export const metadata = {
-  title: 'P Decision Advisor',
+  title: 'Ergoer Agent',
   description: 'Multi-dimensional strategic decision advisor for workplace projects.'
 };
 
