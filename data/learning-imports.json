@@ -8,18 +8,18 @@
     "summary": "The shared conversation contains brand exploration and project setup history. It does not contain customer, opportunity, commercial, product-performance, or outcome training.",
     "records": [
       {
-        "id": "brand-friendly-seal-mascot",
+        "id": "brand-friendly-rabbit-mascot",
         "knowledgeType": "current_preference",
         "domain": "brand",
         "statement": "Use a friendly, optimistic rabbit mascot with no letter branding as the primary character for Ergo Agent.",
         "adviceImpact": "contextual",
         "evidence": [
-          "/public/phuc-sealion.png"
+          "/public/ergo-agent-rabbit.png"
         ],
         "notes": "Visual preference only; it must not influence business recommendations."
       },
       {
-        "id": "brand-gold-p-monogram-exploration",
+        "id": "brand-gold-monogram-exploration",
         "knowledgeType": "current_preference",
         "domain": "brand",
         "statement": "A luxury gold monogram was explored as an alternative brand-mark direction.",
@@ -725,7 +725,7 @@
   },
   {
     "id": "product-costing-process-2026-09-26",
-    "sourceUrl": "https://phuc-decision-advisor.vercel.app/#product-cost-calculator",
+    "sourceUrl": "https://ergo-agent.vercel.app/#product-cost-calculator",
     "sourceTitle": "Product-costing process and input preference",
     "importedAt": "2026-09-26",
     "reviewStatus": "reviewed",
