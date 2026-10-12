@@ -277,7 +277,7 @@ export default function DecisionLab() {
     <section className="decision-lab" id="decision-lab">
       <div className="section-heading">
         <div>
-          <span>ASK P DECISION ADVISOR</span>
+          <span>ASK ERGOER AGENT</span>
           <h2>Start with one clear question</h2>
         </div>
         <p>
