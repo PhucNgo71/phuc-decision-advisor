@@ -11,7 +11,7 @@
         "id": "brand-friendly-seal-mascot",
         "knowledgeType": "current_preference",
         "domain": "brand",
-        "statement": "Use a friendly, optimistic seal mascot associated with the letter P as the primary character for P Decision Advisor.",
+        "statement": "Use a friendly, optimistic rabbit mascot with no letter branding as the primary character for Ergo Agent.",
         "adviceImpact": "contextual",
         "evidence": [
           "/public/phuc-sealion.png"
@@ -22,7 +22,7 @@
         "id": "brand-gold-p-monogram-exploration",
         "knowledgeType": "current_preference",
         "domain": "brand",
-        "statement": "A luxury gold P monogram was explored as an alternative brand-mark direction.",
+        "statement": "A luxury gold monogram was explored as an alternative brand-mark direction.",
         "adviceImpact": "none",
         "notes": "Reference concept, not a confirmed replacement for the seal mascot."
       },
@@ -40,7 +40,7 @@
         "id": "product-human-owned-decision",
         "knowledgeType": "hard_rule",
         "domain": "product",
-        "statement": "The AI advises and P makes the final decision.",
+        "statement": "The AI advises and the user makes the final decision.",
         "adviceImpact": "direct",
         "evidence": [
           "/docs/reference/homepage-concept.png"
@@ -62,7 +62,7 @@
         "id": "operations-repository-and-hosting",
         "knowledgeType": "temporary_context",
         "domain": "operations",
-        "statement": "The project repository is PhucNgo71/phuc-decision-advisor and the current production site is hosted on Vercel.",
+        "statement": "The current production site is hosted on Vercel.",
         "adviceImpact": "none",
         "notes": "Operational context only. Connection errors and setup instructions from the conversation were intentionally not promoted into advisor knowledge."
       }
@@ -522,7 +522,7 @@
         "id": "import-bid-risk-and-margin-gate-2026-09-09",
         "knowledgeType": "judgment",
         "domain": "strategy",
-        "statement": "A bid using imported goods should show a base landed cost and a risk-adjusted landed cost. Test freight volatility, foreign exchange, origin-document failure, customs reclassification, inspection, damage, delay, storage, demurrage and last-mile installation against project margin before P approves the price.",
+        "statement": "A bid using imported goods should show a base landed cost and a risk-adjusted landed cost. Test freight volatility, foreign exchange, origin-document failure, customs reclassification, inspection, damage, delay, storage, demurrage and last-mile installation against project margin before the human decision-maker approves the price.",
         "adviceImpact": "direct",
         "notes": "Do not hide logistics contingency inside product cost. Keep assumptions visible and refresh them when the quote validity or shipping plan changes."
       }
@@ -645,7 +645,7 @@
         "domain": "strategy",
         "statement": "Engage advisers early by asking what success criteria, design intent, cost limits, risks and evidence could change their recommendation. Preserve design intent and client value while making alternatives easy to compare, and revalidate every assumption when scope, consultant or procurement route changes.",
         "adviceImpact": "direct",
-        "notes": "This is a bid-development method, not permission to influence a project improperly. AI advises; P makes the final decision."
+        "notes": "This is a bid-development method, not permission to influence a project improperly. AI advises; the user makes the final decision."
       }
     ]
   },
@@ -655,7 +655,7 @@
     "sourceTitle": "Korea and Japan workplace-furniture competitor update: Fursys, Okamura and Kokuyo",
     "importedAt": "2026-09-18",
     "reviewStatus": "reviewed",
-    "summary": "Added official-source company and capability facts for Korea-based Fursys and Japan-based Okamura and Kokuyo. Recorded P's current judgment that these brands form the Korea/Japan competitor set, with model-level comparison and local-delivery verification required for every opportunity.",
+    "summary": "Added official-source company and capability facts for Korea-based Fursys and Japan-based Okamura and Kokuyo. Recorded the current judgment that these brands form the Korea/Japan competitor set, with model-level comparison and local-delivery verification required for every opportunity.",
     "records": [
       {
         "id": "fursys-korea-workplace-offer-2026-09-18",
@@ -696,7 +696,7 @@
         "id": "korea-japan-current-competitor-set-2026-09-18",
         "knowledgeType": "judgment",
         "domain": "competition",
-        "statement": "In P's current competitive context, track Fursys as the primary Korea-based competitor and Okamura and Kokuyo as the primary Japan-based competitors.",
+        "statement": "In the current competitive context, track Fursys as the primary Korea-based competitor and Okamura and Kokuyo as the primary Japan-based competitors.",
         "adviceImpact": "direct",
         "notes": "User-provided competitor classification. It is not a universal market-share claim; revalidate the active bidders, dealers and specified brands for each project."
       },
@@ -719,17 +719,17 @@
         "domain": "strategy",
         "statement": "When one of these brands appears, identify whether it is named in the specification, proposed by a consultant, incumbent with the client, or introduced by a dealer. Build the response around verified advantages in design fit, multi-brand scope, local execution, supply-chain control, installation, service and risk-adjusted commercial value.",
         "adviceImpact": "direct",
-        "notes": "Do not make unsupported equivalence or origin-based quality claims. Use compliant submittals and transparent evidence; AI advises and P makes the final decision."
+        "notes": "Do not make unsupported equivalence or origin-based quality claims. Use compliant submittals and transparent evidence; AI advises and the user makes the final decision."
       }
     ]
   },
   {
     "id": "product-costing-process-2026-09-26",
     "sourceUrl": "https://phuc-decision-advisor.vercel.app/#product-cost-calculator",
-    "sourceTitle": "P product-costing process and input preference",
+    "sourceTitle": "Product-costing process and input preference",
     "importedAt": "2026-09-26",
     "reviewStatus": "reviewed",
-    "summary": "Recorded P's preferred product-costing workflow: model-level identity, volume, international and inland logistics, import tax, delivery or installation by pcs or sqm, complete landed cost, target selling price and profit. Also recorded the requested clean numeric-entry behavior.",
+    "summary": "Recorded the preferred product-costing workflow: model-level identity, volume, international and inland logistics, import tax, delivery or installation by pcs or sqm, complete landed cost, target selling price and profit. Also recorded the requested clean numeric-entry behavior.",
     "records": [
       {
         "id": "product-costing-input-structure-2026-09-26",

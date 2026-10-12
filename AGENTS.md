@@ -1,4 +1,4 @@
-# Codex Instructions — P Decision Advisor
+# Codex Instructions — Ergo Agent
 
 ## Product intent
 Build a web-based multi-dimensional strategic Decision Advisor for workplace/project sales and procurement strategy.

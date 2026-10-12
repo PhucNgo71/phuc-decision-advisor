@@ -1,4 +1,4 @@
-# P Decision Advisor v0.1
+# Ergo Agent v0.1
 
 Codex-ready starter for a multi-dimensional business Decision Advisor.
 

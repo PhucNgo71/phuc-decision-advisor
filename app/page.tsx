@@ -19,14 +19,14 @@ export default function Home() {
   return (
     <main className="page" id="top">
       <header className="topbar">
-        <div className="brand"><img src="/phuc-sealion.png" alt="Ergoer Agent mascot"/><div><b>Ergoer</b><span>Agent</span></div></div>
+        <div className="brand"><img src="/ergo-agent-rabbit.png" alt="Ergo Agent rabbit mascot"/><div><b>Ergo</b><span>Agent</span></div></div>
         <nav><a className="active" href="#top">Home</a><a href="#decision-lab">Ask Advisor</a><a href="#product-cost-calculator">Product Costing</a><a href="#project-calculator">Project Calculator</a><a href="#knowledge-map">Knowledge Map</a><a href="#knowledge">Updates</a></nav>
         <div className="utility-actions">
           <div className="astra-badge" title="ASTA advisor — GPT-6 Astra">
             <span aria-hidden="true">✦</span>
             <div><b>ASTA</b><small>GPT-6 Astra</small></div>
           </div>
-          <div className="profile">P <span>⌄</span></div>
+          <div className="profile">Ergo <span>⌄</span></div>
         </div>
       </header>
 
@@ -36,7 +36,7 @@ export default function Home() {
           <h1>Think Wider.<br/>Decide Smarter.<br/><em>Go Further.</em></h1>
           <p>Your AI partner for opportunities, products, people and possibilities — built from your experience, designed for what’s next.</p>
           <div className="actions"><a href="#decision-lab">Ask the Advisor →</a><a className="secondary" href="#knowledge-map">Open Knowledge Map</a></div>
-          <div className="principle">AI advises.<br/>P decides.</div>
+          <div className="principle">AI advises.<br/>You decide.</div>
         </div>
 
         <div className="brain-stage">
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="core"><span>◉</span><b>Your<br/>Agent</b></div>
           {brains.map((brain) => <div className={`brain-node ${brain.cls}`} key={brain.name}><i/><div><b>{brain.name}</b><span>{brain.desc}</span></div></div>)}
           {Array.from({length: 26}).map((_,i)=><span className={`dot d${i+1}`} key={i}/>) }
-          <img className="mascot" src="/phuc-sealion.png" alt="Cute sea lion mascot"/>
+          <img className="mascot" src="/ergo-agent-rabbit.png" alt="Ergo Agent rabbit mascot"/>
         </div>
       </section>
 
@@ -58,13 +58,13 @@ export default function Home() {
 
       <a
         className="whatsapp-help"
-        href="https://wa.me/84903017957?text=Hello%20P%2C%20I%20need%20urgent%20help%20because%20I%20cannot%20find%20the%20correct%20advice%20on%20Ergoer%20Agent."
+        href="https://wa.me/84903017957?text=Hello%20Ergo%2C%20I%20need%20urgent%20help%20because%20I%20cannot%20find%20the%20correct%20advice%20on%20Ergo%20Agent."
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Contact P on WhatsApp for urgent help"
+        aria-label="Contact Ergo on WhatsApp for urgent help"
       >
         <span className="whatsapp-icon" aria-hidden="true">☎</span>
-        <span><b>Need urgent help?</b><small>Ask P on WhatsApp</small></span>
+        <span><b>Need urgent help?</b><small>Ask Ergo on WhatsApp</small></span>
       </a>
     </main>
   );

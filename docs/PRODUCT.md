@@ -1,4 +1,4 @@
-# Product Definition — P Decision Advisor
+# Product Definition — Ergo Agent
 
 A web-based, multi-dimensional strategic decision advisor for workplace projects. It does not make final decisions for the user. It analyzes context, exposes trade-offs, challenges assumptions, and recommends a direction with confidence and conditions that could change the advice.
 

@@ -31,7 +31,7 @@ export default function KnowledgeMap() {
         <div>
           <span className="km-eyebrow">DECISION KNOWLEDGE MAP</span>
           <h2 id="knowledge-map-title">See the decision clearly.</h2>
-          <p>Choose the view that fits the conversation. Every view begins with the Win Objective and keeps the final decision with P.</p>
+          <p>Choose the view that fits the conversation. Every view begins with the Win Objective and keeps the final decision with you.</p>
         </div>
         <div className="km-live" aria-label="Knowledge map status">
           <strong>{reviewedLearningCount}</strong>
@@ -57,7 +57,7 @@ export default function KnowledgeMap() {
 
       <div className="km-focus-lines" aria-label="Priority knowledge lines">
         <article className="km-focus-line km-focus-product">
-          <span aria-hidden="true">P</span>
+          <span aria-hidden="true">E</span>
           <div><small>PRODUCTS</small><b>Choose the exact product—not only the brand.</b><p>Check model, configuration, application fit, specifications, certification, warranty, availability and local support.</p></div>
         </article>
         <article className="km-focus-line km-focus-logistics">
@@ -123,7 +123,7 @@ export default function KnowledgeMap() {
         </div>
       )}
 
-      <p className="km-guardrail"><b>Knowledge guardrail:</b> Facts, preferences, experience and judgment stay labelled. The advisor shows options and evidence; P makes the final decision.</p>
+      <p className="km-guardrail"><b>Knowledge guardrail:</b> Facts, preferences, experience and judgment stay labelled. The advisor shows options and evidence; you make the final decision.</p>
     </section>
   );
 }
@@ -145,5 +145,5 @@ function OrbitNode({ position, title, text }: { position: string; title: string;
 }
 
 function DecisionOutput() {
-  return <div className="km-output"><div><small>1</small><b>Situation</b></div><i>→</i><div><small>2</small><b>Scenarios</b></div><i>→</i><div><small>3</small><b>Trade-offs &amp; risks</b></div><i>→</i><div><small>4</small><b>Recommended direction</b></div><i>→</i><div className="km-human"><small>5</small><b>P decides</b></div></div>;
+  return <div className="km-output"><div><small>1</small><b>Situation</b></div><i>→</i><div><small>2</small><b>Scenarios</b></div><i>→</i><div><small>3</small><b>Trade-offs &amp; risks</b></div><i>→</i><div><small>4</small><b>Recommended direction</b></div><i>→</i><div className="km-human"><small>5</small><b>You decide</b></div></div>;
 }

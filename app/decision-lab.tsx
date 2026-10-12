@@ -277,7 +277,7 @@ export default function DecisionLab() {
     <section className="decision-lab" id="decision-lab">
       <div className="section-heading">
         <div>
-          <span>ASK ERGOER AGENT</span>
+          <span>ASK ERGO AGENT</span>
           <h2>Start with one clear question</h2>
         </div>
         <p>
@@ -364,7 +364,7 @@ export default function DecisionLab() {
                   </div>
                   <p className="feedback-caveat">
                     Apply this guidance to the exact route, HS code, supplier,
-                    quotation and project conditions. AI advises; P decides.
+                    quotation and project conditions. AI advises; you decide.
                   </p>
                 </>
               ) : (
@@ -406,7 +406,7 @@ export default function DecisionLab() {
                   <p className="feedback-caveat">
                     Feedback may change with supplier quotes, lead time,
                     decision-maker influence and validated customer priorities.
-                    AI advises; P decides.
+                    AI advises; you decide.
                   </p>
                 </>
               )}
@@ -704,7 +704,7 @@ export default function DecisionLab() {
             </div>
           </div>
           <div className="human-gate">
-            Estimates support the decision. <strong>P decides.</strong>
+            Estimates support the decision. <strong>You decide.</strong>
           </div>
         </div>
       </div>
