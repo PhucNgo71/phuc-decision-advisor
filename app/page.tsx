@@ -44,7 +44,7 @@ export default function Home() {
           <div className="core"><span>◉</span><b>Your<br/>Agent</b></div>
           {brains.map((brain) => <div className={`brain-node ${brain.cls}`} key={brain.name}><i/><div><b>{brain.name}</b><span>{brain.desc}</span></div></div>)}
           {Array.from({length: 26}).map((_,i)=><span className={`dot d${i+1}`} key={i}/>) }
-          <img className="mascot" src="/ergo-agent-rabbit.png" alt="Ergo Agent rabbit mascot"/>
+          
         </div>
       </section>
 
