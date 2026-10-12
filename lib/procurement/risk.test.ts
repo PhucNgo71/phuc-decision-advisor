@@ -15,12 +15,12 @@ test('normal demo data raises no unsupported anomaly allegation', () => {
 });
 test('R01 evidence accompanies recorded non-leading award', () => {
   const s = copy(); s.projects[0].status = 'closed';
-  s.awardOverrides['demo-project'] = { vendorId: 'vendor-1', reason: 'Approved exception', createdAt: '2026-09-15' };
+  s.awardOverrides['demo-project'] = { vendorId: 'vendor-2', reason: 'Approved exception', createdAt: '2026-09-15' };
   s.audit.push(event('recommendation.overridden', 'override-1'));
   const first = detectProcurementRisks(s, 'demo-project').find(x => x.code === 'R01');
   // Only assert mismatch if this fixture actually ranks the other vendor first.
   const winner = compareBids(s.bids, s.vendors, s.projects[0].package)[0].vendorId;
-  assert.equal(Boolean(first), winner !== 'vendor-1');
+  assert.equal(Boolean(first), winner !== 'vendor-2');
   if (first) assert.deepEqual(first.evidenceEventIds, ['override-1']);
 });
 test('R02, R03, R04, R05 and R06 recognize event evidence', () => {
